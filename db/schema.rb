@@ -31,13 +31,13 @@ ActiveRecord::Schema.define(version: 2021_10_20_131405) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.string "email"
-    t.string "phone"
-    t.text "about"
   end
 
   create_table "doctors", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "phone"
+    t.text "about"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
