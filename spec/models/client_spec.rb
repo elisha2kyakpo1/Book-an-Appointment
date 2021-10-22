@@ -29,11 +29,6 @@ RSpec.describe Client do
       subject.email = ''
       expect(subject).not_to be_valid
     end
-
-    it 'The email should not be longer than 50 characters' do
-      subject.email = 'kwehjkwehfkjewhfewhfkdhfkdhfkdhfkdjfkldjfkljflkwjflwdjflkdjfkldjfklsdf'
-      expect(subject).not_to be_valid
-    end
   end
 
   describe 'Associations', type: :model do
