@@ -6,7 +6,6 @@ class CreateAppointments < ActiveRecord::Migration[6.1]
       t.date :appointment_date
       t.string :hospital
       t.references :doctor, index: true, foreign_key: true
-      t.references :client, index: true, foreign_key: true
     end
   end
 end
