@@ -1,5 +1,7 @@
 class ClientController < ApplicationController
-  def index; end
+  before_action :authenticate_client!
+  def index
+  end
 
   def show; end
 end
