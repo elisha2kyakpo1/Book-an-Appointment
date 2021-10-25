@@ -111,7 +111,7 @@
 
   .leading {
     margin-top: 120px;
-    margin-bottom: 115px;
+    margin-bottom: 100px;
   }
 
   .shape {
@@ -135,9 +135,12 @@
     height: 225px;
   }
 
+  .doctors_list {
+    width: 40vw;
+  }
+
   .row_contain {
     width: 50vw;
-    margin-bottom: -100px;
     margin-left: -500px;
   }
 
@@ -152,9 +155,5 @@
   .select {
     font-size: 20px;
     width: 20vw;
-  }
-
-  .doctors_list {
-    width: 40vw;
   }
 }
