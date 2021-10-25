@@ -6,7 +6,7 @@ import { render } from 'react-dom';
 import { getDoctors } from '../redux/doctors';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'material-icons/iconfont/material-icons.css';
-import './doctors.css';
+import '../styles/doctors.css';
 
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
