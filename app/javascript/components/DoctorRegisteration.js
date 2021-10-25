@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Doctor_regesteration = () => {
+const DoctorRegisteration = () => {
   return (
     <div className="doc-regester">
       <form>
@@ -18,4 +18,4 @@ const Doctor_regesteration = () => {
   )
 };
 
-export default Doctor_regesteration;
+export default DoctorRegisteration;
