@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-class Home extends React.Component {
-  render () {
-    return (
-      <React.Fragment>
-      </React.Fragment>
-    );
-  }
+import React from 'react'
+import DoctorRegisteration from './DoctorRegisteration'
+
+const Home = () => {
+  return (
+    <div>
+      <DoctorRegisteration />
+    </div>
+  )
 }
 
 export default Home

@@ -15,3 +15,7 @@ ActiveStorage.start()
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
+
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
