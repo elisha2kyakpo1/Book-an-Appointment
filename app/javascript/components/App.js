@@ -2,8 +2,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from './redux/configurestore';
-import Doctors from './components/pages/Doctors/doctors';
+import { store } from './redux/ConfigureStore';
 import HomePage from './home_page/HomePage';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
     <Provider store={store}>
       <Router>
         <div className="page container">
-          <Doctors />
           <HomePage />
         </div>
       </Router>
