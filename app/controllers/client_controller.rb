@@ -5,6 +5,5 @@ class ClientController < ApplicationController
     # render json: @clients
   end
 
-  def show
-  end
+  def show; end
 end
