@@ -1,5 +1,5 @@
 import React from 'react'
-import DoctorRegisteration from './DoctorRegisteration'
+import DoctorRegisteration from './doctors/DoctorRegisteration'
 
 const Home = () => {
   return (
