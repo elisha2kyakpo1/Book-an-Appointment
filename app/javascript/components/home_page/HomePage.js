@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-function HeroSection() {
+function HomePage() {
   return (
     <div className="hero-container">
       <h1>EXCEPTIONAL CARE TO YOU</h1>
@@ -19,4 +19,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default HomePage;
