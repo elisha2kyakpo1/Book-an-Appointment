@@ -6,6 +6,7 @@ import { render } from 'react-dom';
 import { getDoctors } from '../redux/doctors';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'material-icons/iconfont/material-icons.css';
+import Sidebar from './Sidebar';
 import '../styles/doctors.css';
 
 const Doctors = () => {
@@ -32,6 +33,7 @@ const Doctors = () => {
   return (
 
     <>
+      <Sidebar />
       <div className="outter_container">
         <div className="contain">
           <div className="doct">
