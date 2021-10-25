@@ -5,6 +5,7 @@ class CreateDoctors < ActiveRecord::Migration[6.1]
       t.string :email
       t.integer :phone
       t.text :about
+      t.string :image
       t.references :client, index: true, foreign_key: true
 
       t.timestamps

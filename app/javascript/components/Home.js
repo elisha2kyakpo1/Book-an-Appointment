@@ -1,9 +1,10 @@
 import React from 'react'
+import Doctor_regesteration from './Doctor_regesteration'
 
 const Home = () => {
   return (
     <div>
-      <h1>Another component</h1>
+      <Doctor_regesteration />
     </div>
   )
 }
