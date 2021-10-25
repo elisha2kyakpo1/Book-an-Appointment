@@ -1,13 +1,22 @@
+/* eslint-disable no-unused-vars */
+import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
-import Home from './Home';
+import { Provider } from 'react-redux';
+import { store } from './redux/configurestore';
+import Doctors from './components/pages/Doctors/doctors';
+import HomePage from './home_page/HomePage';
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Home />
-    </div>
-  )
+    <Provider store={store}>
+      <Router>
+        <div className="page container">
+          <Doctors />
+          <HomePage />
+        </div>
+      </Router>
+    </Provider>
+  );
 }
 
-export default App
-
+export default App;
