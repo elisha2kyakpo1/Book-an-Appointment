@@ -6,7 +6,7 @@ const loadDoctors = json => ({
 });
 
 const getDoctors = () => dispatch => {
-  fetch('https://book-doctor-appointment.herokuapp.com/doctors')
+  fetch('api/v1/doctors')
     .then(response => response.json())
     .then(json => dispatch(loadDoctors(json)));
 };
