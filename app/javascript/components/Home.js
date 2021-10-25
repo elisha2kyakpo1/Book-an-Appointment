@@ -1,15 +1,12 @@
-/* eslint-disable react/prefer-stateless-function */
-/* eslint-disable no-unused-vars */
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import DoctorRegisteration from './DoctorRegisteration'
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-      </>
-    );
-  }
+const Home = () => {
+  return (
+    <div>
+      <DoctorRegisteration />
+    </div>
+  )
 }
 
 export default Home;
