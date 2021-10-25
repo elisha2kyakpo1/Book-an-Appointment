@@ -1,12 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import PropTypes from 'prop-types';
+
 class Home extends React.Component {
-  render () {
+  render() {
     return (
-      <React.Fragment>
-      </React.Fragment>
+      <>
+      </>
     );
   }
 }
 
-export default Home
+export default Home;

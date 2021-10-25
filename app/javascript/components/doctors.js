@@ -3,11 +3,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
-import { getDoctors } from '../../../redux/Doctors';
+import { getDoctors } from '../redux/doctors';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'material-icons/iconfont/material-icons.css';
 import './doctors.css';
 
 const Doctors = () => {
-  const doctors = useSelector(state => state.doctorReducer);
+  const doctors = useSelector((state) => state.doctorReducer);
   const [doctor, setDoctor] = useState({});
 
   setTimeout(() => { window.location.reload(1); }, 10000);
@@ -45,7 +47,7 @@ const Doctors = () => {
             <div className="container">
               <div className="row_contain">
                 <div className="doctors_list row">
-                  {doctors.map(doctor => (
+                  {doctors.map((doctor) => (
                     <div className="col-12 col-md-6 col-lg-4">
                       <div className="doctor">
                         <div className="circle">
