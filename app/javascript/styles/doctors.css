@@ -4,6 +4,10 @@
   border: solid 30px #f1f1f1;
 }
 
+.goTzNP .item-content {
+  font-size: 12px;
+}
+
 .outter_container {
   width: 50vw;
   height: 80vh;
@@ -84,10 +88,15 @@
 
 @media screen and (min-width: 768px) {
   .row_contain {
-    margin-left: -220px;
-    width: 50vw;
+    margin-left: -280px;
+    width: 40vw;
   }
-}
+
+  .goTzNP .item-content {
+    font-size: 20px;
+  }
+
+}  
 
 @media screen and (min-width: 1200px) {
   .please,
@@ -96,7 +105,7 @@
   }
 
   .leading {
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 115px;
   }
 
@@ -110,7 +119,7 @@
     position: absolute;
     left: 41%;
     top: 50%;
-  }
+}
 
   .opposite {
     left: 84.2%;
@@ -121,13 +130,10 @@
     height: 225px;
   }
 
-  .doctors_list {
-    width: 40vw;
-  }
-
   .row_contain {
     width: 50vw;
-    margin-left: -25vw;
+    margin-bottom: -100px;
+    margin-left: -500px;
   }
 
   .inner_opposite {
@@ -141,5 +147,9 @@
   .select {
     font-size: 20px;
     width: 20vw;
+  }
+
+  .doctors_list {
+    width: 40vw;
   }
 }
