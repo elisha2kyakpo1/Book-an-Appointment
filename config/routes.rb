@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'client#index'
+  get '/booking/', to: 'pages#booking'
+  root 'pages#home'
   devise_for :clients
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   namespace :api do
