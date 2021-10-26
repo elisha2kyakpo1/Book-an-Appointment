@@ -1,73 +1,37 @@
-import React from 'react';
-import Doctor from '../doctors/Doctors'
+import React from "react";
+import { Route, BrowserRouter as Router, Switch, Link } from "react-router-dom";
+import Doctor from "../doctors/Doctors";
+import Appointment from "../doctors/Appointment";
 
-import {
-  CDBSidebar,
-  CDBSidebarContent,
-  CDBSidebarFooter,
-  CDBSidebarHeader,
-  CDBSidebarMenu,
-  CDBSidebarMenuItem,
-} from 'cdbreact';
-import { NavLink, BrowserRouter } from 'react-router-dom';
+function Sidebar() {
+  return (
 
-const Sidebar = () => (
-  <div
-    style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}
-  >
-    <CDBSidebar textColor="#99c210" backgroundColor="#fff">
-      <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large" />}>
-        <a
-          href="/"
-          className="text-decoration-none"
-          style={{ color: 'inherit' }}
-        >
-          Book A Doctor
-        </a>
-      </CDBSidebarHeader>
-        <BrowserRouter>
-        <CDBSidebarContent className="sidebar-content">
-          <CDBSidebarMenu>
-            <NavLink exact to="/" activeClassName="activeClicked">
-              <CDBSidebarMenuItem className="bar-font">Home</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink to="/doctor" activeClassName="activeClicked">
-              <CDBSidebarMenuItem>Doctors</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem>Doctors Profile</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
-              <CDBSidebarMenuItem>
-                Book an Appointment
-              </CDBSidebarMenuItem>
-            </NavLink>
+      <div>
+        <nav>
+            <ul className="links">
+              <li>
+                <Link to="/doctor">Doctors</Link>
+              </li>
+              <li>
+                <Link to="/Appointment">Appointment</Link>
+              </li>
+              <li>
+                <Link to="/Add_doctor">Add doctor</Link>
+              </li>
+              <li>
+                <Link to="/My_appointment">My appointment</Link>
+              </li>
+             
+            </ul>
+          </nav>
+          <Switch>
+            <Route path="/doctor" component={Doctor} />
+            <Route path="/appointment" component={Appointment} />
+            <Route path="/appointment" component={Appointment} />
+          </Switch>
+      </div>
 
-            <NavLink
-              exact
-              to="/hero404"
-              target="_blank"
-              activeClassName="activeClicked"
-            >
-              <CDBSidebarMenuItem icon="exclamation-circle">
-                404 page
-              </CDBSidebarMenuItem>
-            </NavLink>
-          </CDBSidebarMenu>
-        </CDBSidebarContent>
-      </BrowserRouter>
-
-      <CDBSidebarFooter icon="fa fa-facebook" style={{ textAlign: 'center' }}>
-        <div
-          style={{
-            padding: '20px 5px',
-          }}
-        >
-          Sidebar Footer
-        </div>
-      </CDBSidebarFooter>
-    </CDBSidebar>
-  </div>
-);
+  );
+}
 
 export default Sidebar;
