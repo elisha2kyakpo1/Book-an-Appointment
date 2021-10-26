@@ -1,4 +1,5 @@
 import React from 'react';
+import Doctor from '../doctors/Doctors'
 
 import {
   CDBSidebar,
@@ -30,7 +31,7 @@ const Sidebar = () => (
             <NavLink exact to="/" activeClassName="activeClicked">
               <CDBSidebarMenuItem className="bar-font">Home</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/tables" activeClassName="activeClicked">
+            <NavLink to="/doctor" activeClassName="activeClicked">
               <CDBSidebarMenuItem>Doctors</CDBSidebarMenuItem>
             </NavLink>
             <NavLink exact to="/profile" activeClassName="activeClicked">
