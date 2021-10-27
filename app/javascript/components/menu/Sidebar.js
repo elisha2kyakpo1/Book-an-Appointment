@@ -1,38 +1,42 @@
-import React from 'react';
-import {
-  Route, Switch, Link,
-} from 'react-router-dom';
-import Doctor from '../doctors/Doctors';
-import Appointment from '../doctors/Appointment';
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
+import SidebarData from './SidebarData';
 
 function Sidebar() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
-
-    <div>
-      <nav>
-        <ul className="links">
-          <li>
-            <Link to="/doctor">Doctors</Link>
-          </li>
-          <li>
-            <Link to="/Appointment">Appointment</Link>
-          </li>
-          <li>
-            <Link to="/Add_doctor">Add doctor</Link>
-          </li>
-          <li>
-            <Link to="/My_appointment">My appointment</Link>
-          </li>
-
-        </ul>
-      </nav>
-      <Switch>
-        <Route path="/doctor" component={Doctor} />
-        <Route path="/appointment" component={Appointment} />
-        <Route path="/appointment" component={Appointment} />
-      </Switch>
-    </div>
-
+    <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <div className="navbar">
+          <Link to="#" className="menu-bars">
+            <FaIcons.FaBars onClick={showSidebar} color="#474747" />
+          </Link>
+        </div>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <ul className="nav-menu-items" onClick={showSidebar}>
+            <li className="navbar-toggle">
+              <Link to="#" className="menu-bars">
+                <AiIcons.AiOutlineClose color="#474747" />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  <span className="span1">{item.title}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
 }
 
