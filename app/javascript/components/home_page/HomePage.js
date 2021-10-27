@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from './Button';
-import '../doctors/Doctors.css'
+import '../doctors/Doctors.css';
+
 function HomePage() {
   return (
     <div className="hero-container">

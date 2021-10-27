@@ -1,15 +1,12 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
-import { getDoctors } from '../redux/Doctors'
+import { getDoctors } from '../redux/Doctors';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Doctor.css';
-
 
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
   const [doctor, setDoctor] = useState({});
-
-
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -29,7 +26,7 @@ const Doctors = () => {
   return (
 
     <>
-   
+
       <div className="outter_container">
         <div className="contain">
           <div className="doct">

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 function Appointment() {
-    return (
-        <div>
-            My appointments
-        </div>
-    )
+  return (
+    <div>
+      My appointments
+    </div>
+  );
 }
 
 export default Appointment;
