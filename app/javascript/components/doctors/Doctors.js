@@ -3,7 +3,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import { getDoctors } from '../redux/Doctors';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './Doctor.css';
 
 const Doctors = () => {
