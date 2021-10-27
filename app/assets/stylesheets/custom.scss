@@ -13,6 +13,18 @@ $divider-color: #bdbdbd;
   outline: none;
 }
 
+.hero-container {
+  background: url("../images/assets/bg_image.jpg") center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
 body {
   background: #fff;
   position: relative;
@@ -414,18 +426,6 @@ video {
   height: 100%;
   position: fixed;
   z-index: -1;
-}
-
-.hero-container {
-  background: url("../images/assets/bg_image.jpg") center center/cover no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
 }
 
 .hero-container > h1 {
