@@ -3,9 +3,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './redux/ConfigureStore';
-
 import Sidebar from './menu/Sidebar';
 import Doctors from './doctors/Doctors';
+import HomePage from './home_page/HomePage';
+
+import Home from './Home';
 
 function App() {
   return (
