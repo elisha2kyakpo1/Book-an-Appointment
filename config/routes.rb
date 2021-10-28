@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       
       resources :doctors  
-       
+      resources :appointments
   
     end
   end

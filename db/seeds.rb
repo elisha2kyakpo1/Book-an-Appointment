@@ -12,3 +12,4 @@ Doctor.destroy_all
 puts 'creating doctors'
 
 Doctor.create(name:'David',email:'David@gmail.com',phone:'079',image:'https://res.cloudinary.com/erezfriemagor/image/upload/v1635428896/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg')
+
