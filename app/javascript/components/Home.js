@@ -1,9 +1,12 @@
 import React from 'react';
+
 import Sidebar from './menu/Sidebar';
+import Doctors from './doctors/Doctors';
 
 const Home = () => (
   <div>
-    <Sidebar />
+  <Sidebar />
+  <Doctors />
 
   </div>
 );

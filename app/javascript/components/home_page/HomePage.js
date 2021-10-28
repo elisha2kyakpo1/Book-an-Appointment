@@ -13,7 +13,8 @@ function HomePage() {
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          GET STARTED
+          GET STARTED 
+
         </Button>
       </div>
     </div>

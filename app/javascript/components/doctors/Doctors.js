@@ -3,6 +3,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import { getDoctors } from '../redux/Doctors';
+import { Link } from 'react-router-dom';
 import './Doctor.css';
 
 const Doctors = () => {
@@ -48,7 +49,7 @@ const Doctors = () => {
                       <div className="circle">
                         <img src="" alt="doctors" />
                       </div>
-                      <h2 className="name">{doctor.name}</h2>
+                      <h2 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h2>
                     </div>
                   </div>
 
