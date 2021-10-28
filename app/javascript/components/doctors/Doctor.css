@@ -1,15 +1,7 @@
-.hero-container {
-  display: none;
-}
-
 .contain {
   width: 96%;
   border: solid 30px #f1f1f1;
   margin-left: 2%;
-}
-
-.goTzNP .item-content {
-  font-size: 12px;
 }
 
 .outter_container {
@@ -18,7 +10,8 @@
 }
 
 .please {
-  font-size: 12px;
+  margin-left: 10px;
+  font-size: 15px;
 }
 
 .select {
@@ -27,106 +20,43 @@
   width: 100px;
 }
 
-.leading {
-  margin-top: 30px;
-  margin-left: -2px;
-}
-
-.please,
-.select {
-  display: flex;
-  justify-content: center;
-}
-
 .circle {
   background-color: #d4ece9;
   border-radius: 50%;
   width: 80px;
   height: 120px;
-  margin-right: 150px;
-}
-
-.row_contain {
-  margin-top: 50px;
-  margin-left: -90px;
-}
-
-.doctor {
-  margin-left: 30vw;
-  margin-bottom: 30px;
 }
 
 .name {
   margin-left: 25px;
-  top: 10px;
+  margin-top: 13px;
 }
 
 .shape {
   display: none;
 }
 
-.opposite {
-  left: 74.5%;
-  transform: rotate(180deg);
-}
-
-.inner {
-  transform: rotate(270deg);
-  position: absolute;
-  top: 60px;
-  left: 50px;
-}
-
-.material-icons {
-  position: absolute;
-  left: -8px;
-  top: 10px;
-  font-size: 30px;
-}
-
-.kYUYSn.toggled {
-  min-width: 160px !important;
-  margin-left: 55px;
-  margin-left: -10px;
-}
-
 @media screen and (min-width: 768px) {
-  .row_contain {
-    margin-left: -200px;
-    width: 40vw;
+  .row {
+    width: 32vw;
+    margin-left: 4vw;
   }
 
-  .goTzNP .item-content {
-    font-size: 20px;
+  .please {
+    margin-left: 50px;
+    font-size: 25px;
   }
 
   .select {
-    margin-left: 103px;
-    width: 16vw;
+    margin-left: 50px;
+    font-size: 18px;
+    width: 120px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .row_contain {
-    margin-left: -280px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .please {
-    font-size: 30px;
-    margin-left: 205px;
-  }
-
-  .select {
-    font-size: 20px;
-    width: 30vw;
-    margin-left: 230px;
-  }
-
-  .leading {
-    margin-top: 120px;
-    margin-bottom: 60px;
+  .row {
+    margin-left: -5px;
   }
 
   .shape {
@@ -135,31 +65,66 @@
     height: 100px;
     background: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 25%, #d0d7de 25%, #d0d7de 40%, 50%, #d0d7de 100%);
     border-radius: 30px / 50px;
-    margin-left: -8%;
-    position: absolute;
-    left: 38%;
-    top: 50%;
+    position: relative;
+  }
+
+  .sh_left {
+    margin-left: -20px;
+  }
+
+  .shape_doctors {
+    display: flex;
   }
 
   .opposite {
-    left: 80.5%;
+    transform: rotate(180deg);
+    margin-right: -20px;
   }
 
-  .circle {
-    width: 150px;
-    height: 225px;
+  .material-icons {
+    font-size: 30px;
   }
 
-  .doctors_list {
-    width: 40vw;
+  .inner_left {
+    position: absolute;
+    top: 35px;
+    left: 32px;
+    transform: rotate(270deg);
   }
 
-  .row_contain {
-    width: 50vw;
-    margin-left: -500px;
+  .inner_right {
+    position: absolute;
+    top: 28px;
+    left: 33px;
+    transform: rotate(270deg);
   }
 
-  .inner_opposite {
-    top: 55px;
+  .leading {
+    width: 30vw;
+    margin-left: 13vw;
+  }
+
+  .please,
+  .select {
+    width: 25vw;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .row {
+    width: 20vw;
+    margin-left: 14vw;
+  }
+
+  .leading {
+    margin-left: 25vw;
+    margin-bottom: 100px;
+    padding-top: 60px;
+  }
+
+  .inner_left,
+  .inner_right {
+    left: 41px;
   }
 }

@@ -30,36 +30,35 @@ const Doctors = () => {
 
       <div className="outter_container">
         <div className="contain">
-          <div className="doct">
-            <div className="leading">
-              <h1 className="please">LEADING DOCTORS</h1>
-              <h2 className="select">please select a doctor</h2>
-            </div>
-            <div className="shape">
-              <div className="inner">
+          <div className="leading">
+            <h1 className="please">LEADING DOCTORS</h1>
+            <h2 className="select">please select a doctor</h2>
+          </div>
+          <div className="shape_doctors">
+            <div className="shape sh_left">
+              <div className="inner_left">
                 <i className="material-icons" style={{ color: 'white' }}>change_history</i>
               </div>
             </div>
             <div className="container">
-              <div className="row_contain">
-                <div className="doctors_list row">
-                  {doctors.map((doctor) => (
-                    <div className="col-12 col-md-6 col-lg-4">
-                      <div className="doctor">
-                        <div className="circle">
-                          <img src="" alt="doctors" />
-                        </div>
-                        <h2 className="name">{doctor.name}</h2>
+              <div className="row">
+                {doctors.map((doctor) => (
+                  <div className="col-12 col-md-6 col-lg-4">
+                    <div className="doctor">
+                      <div className="circle">
+                        <img src="" alt="doctors" />
                       </div>
+                      <h2 className="name">{doctor.name}</h2>
                     </div>
+                  </div>
 
-                  ))}
+                ))}
 
-                </div>
               </div>
+
             </div>
             <div className="shape opposite">
-              <div className="inner inner_opposite">
+              <div className="inner_right">
                 <i className="material-icons" style={{ color: 'white' }}>change_history</i>
               </div>
             </div>
