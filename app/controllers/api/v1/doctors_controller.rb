@@ -12,9 +12,9 @@ class Api::V1::DoctorsController < ApplicationController
 
   def create
     @doctor = Doctor.new(doctor_params)
-    if @doctor.save
-      redirect_to root_path
-    end
+    return unless @doctor.save
+
+    redirect_to root_path
   end
 
   private
