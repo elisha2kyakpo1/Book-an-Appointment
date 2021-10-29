@@ -37,7 +37,6 @@
   display: none;
 }
 
-
 @media screen and (min-width: 768px) {
   .row {
     width: 32vw;
@@ -110,7 +109,6 @@
   .select {
     width: 25vw;
   }
-
 }
 
 @media screen and (min-width: 1200px) {

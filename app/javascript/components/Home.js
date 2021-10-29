@@ -5,8 +5,8 @@ import './Home.css';
 
 const Home = () => (
   <div className="homepage">
-  <Sidebar />
-  <Doctors />
+    <Sidebar />
+    <Doctors />
 
   </div>
 );

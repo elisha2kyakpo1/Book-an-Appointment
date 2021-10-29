@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable react/jsx-key */
 import React from 'react';
 import { useParams } from 'react-router-dom';

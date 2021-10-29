@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect, useState } from 'react';
-import { getDoctors } from '../redux/Doctors';
 import { Link } from 'react-router-dom';
+import { getDoctors } from '../redux/Doctors';
 import './Doctor.css';
 
 const Doctors = () => {
