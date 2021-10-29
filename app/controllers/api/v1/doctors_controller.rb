@@ -14,7 +14,7 @@ class Api::V1::DoctorsController < ApplicationController
     @doctor = Doctor.new(doctor_params)
     if @doctor.save
       redirect_to root_path
-    end    
+    end
   end
 
   private
