@@ -373,13 +373,6 @@ form {
 }
 
 @media (min-width: 780px) {
-  .hero-container > p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  }
-
   form {
     width: 40%;
   }
@@ -441,6 +434,13 @@ video {
   margin-top: -100px;
 }
 
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .hero-btns {
   margin-top: 32px;
 }
@@ -461,18 +461,6 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-text a {
-    text-decoration: none;
-    color: #474747;
-    font-size: 18px;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 4px;
-  }
-
   .hero-container > h1 {
     font-size: 50px;
     margin-top: -100px;
@@ -543,6 +531,18 @@ video {
   padding: 8px 0 8px 16px;
   list-style: none;
   height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #474747;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
 }
 
 .nav-text a:hover {
