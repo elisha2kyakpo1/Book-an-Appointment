@@ -4,7 +4,7 @@
 /* eslint-disable react/jsx-key */
 import React from 'react';
 
-function AddADoctor() {
+function AddDoctor() {
   return (
     <div>
       <form action="/api/v1/doctors" method="POST">
@@ -29,4 +29,4 @@ function AddADoctor() {
   );
 }
 
-export default AddADoctor;
+export default AddDoctor;

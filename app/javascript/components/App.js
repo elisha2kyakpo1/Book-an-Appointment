@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/ConfigureStore";
 import Home from "./Home";
 import DoctorDetails from "../components/doctors/DoctorDetails";
-import AddADoctor from "./doctors/AddADoctor";
+import AddDoctor from "./doctors/AddDoctor";
 import Appointment from "./clients/Appointment";
 import Profile from "./doctors/Profile";
 
@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/DetailsPage/:id" component={DoctorDetails} />
-            <Route path="/addADoctor" component={AddADoctor} />
+            <Route path="/addDoctor" component={AddDoctor} />
             <Route path="/appointments" component={Appointment} />
             <Route path="/profile" component={Profile} />
 

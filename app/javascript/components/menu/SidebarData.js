@@ -11,7 +11,7 @@ const SidebarData = [
   },
   {
     title: 'Add Doctors',
-    path: '/addADoctor',
+    path: '/addDoctor',
     icon: <FaIcons.FaMedrt color="#474747" />,
     cName: 'nav-text',
   },
