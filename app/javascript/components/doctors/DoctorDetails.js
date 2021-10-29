@@ -8,7 +8,7 @@ function DoctorDetails() {
   const { id } = useParams();
   return (
     <div>
-      {storeDoctors.filter((doctor) => doctor.id === id).map((doc) => (
+      {storeDoctors.filter((doctor) => doctor.id == id).map((doc) => (
         <ul>
           <li>
             {doc.name}
@@ -21,8 +21,8 @@ function DoctorDetails() {
           </li>
         </ul>
       ))}
-
     </div>
+
   );
 }
 

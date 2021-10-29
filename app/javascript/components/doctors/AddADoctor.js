@@ -1,14 +1,32 @@
-// const addADoctor = (payload) => {
-//   const docDetails = { ...payload };
-//   return async function addDoctors(dispatch) {
-//     fetch('api/v1/clients/:client_id/doctors', {
-//       method: 'POST',
-//       body: JSON.stringify(docDetails),
-//       headers: {
-//         'content-type': 'application/json',
-//       },
-//     }).then((response) => response.status === 201 && dispatch(registerDoctor(bookDetails)));
-//   };
-// };
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/jsx-indent */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/jsx-key */
+import React from 'react';
 
-// export default addADoctor;
+function AddDoctor() {
+  return (
+    <div>
+      <form action="/api/v1/doctors" method="POST">
+  <div>
+    <label htmlFor="say">name</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div>
+    <label htmlFor="to">email</label>
+    <input type="text" name="email" id="email" />
+  </div>
+  <div>
+    <label htmlFor="to">phone</label>
+    <input type="text" name="phone" id="phone" />
+  </div>
+  <div>
+    <button>Create doctor</button>
+  </div>
+      </form>
+
+    </div>
+  );
+}
+
+export default AddDoctor;
