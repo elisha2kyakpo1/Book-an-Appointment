@@ -1,4 +1,5 @@
 class Api::V1::DoctorsController < ApplicationController
+    skip_before_action :verify_authenticity_token
     def index
         @doctors = Doctor.all
         render json: @doctors
@@ -11,9 +12,12 @@ class Api::V1::DoctorsController < ApplicationController
 
      
   def create
-   @doctor = Doctor.new
-   @doctor = Doctor.create(doctor_params)
-end
+    @Doctor=Doctor.new(doctor_params)
+    redirect_to root_path
+  end
+
+
+
 private
   def doctor_params
     params.permit(:name, :email, :phone, :about, :image)

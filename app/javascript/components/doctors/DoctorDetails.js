@@ -21,8 +21,8 @@ function DoctorDetails() {
           </li>
         </ul>
       ))}
-
     </div>
+
   );
 }
 
