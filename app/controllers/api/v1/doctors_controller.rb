@@ -10,20 +10,13 @@ class Api::V1::DoctorsController < ApplicationController
     end
 
      
-#   def create
-#     doctor = Doctor.new(doctor_params)
- 
-#     If doctor.save
-#        render json: {status: ‘SUCCESS’, message:’Loaded doctor’, data:doctor),status: :ok
-      
-#     else
-#         render json: {status: ‘ERROR’, message:’doctor not saved’, data:doctor.errors),status: :unprocessable entry
-#     end
- 
-#  Private
- 
-#  def doctor_params
-#      params.permit(:name, :email, :phone, :about)
-#  end
+  def create
+   @doctor = Doctor.new
+   @doctor = Doctor.create(doctor_params)
+end
+private
+  def doctor_params
+    params.permit(:name, :email, :phone, :about, :image)
+  end
  
 end
