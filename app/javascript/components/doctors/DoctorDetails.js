@@ -22,14 +22,7 @@ function DoctorDetails() {
     </li>
      </ul>
   ))}
-  <form action="/articles/42" method="post" accept-charset="UTF-8" >
-  <input name="authenticity_token" type="hidden" value="..." />
-  <input type="text" name="article[title]" id="article_title" value="My Title" />
-  <textarea name="article[body]" id="article_body" cols="60" rows="10">
-    My Body
-  </textarea>
-  <input type="submit" name="commit" value="Update Article" data-disable-with="Update Article">
-</form>
+  
   <button>Reserve</button>
         </div>
     )
