@@ -10,22 +10,22 @@ const SidebarData = [
     cName: 'nav-text',
   },
   {
-    title: 'Doctors',
-    path: 'https://google.com',
+    title: 'Add Doctors',
+    path: '/addADoctor',
     icon: <FaIcons.FaMedrt color="#474747" />,
     cName: 'nav-text',
   },
 
   {
-    title: 'Doctors Details',
-    path: '/doctorsDetails',
+    title: 'Appointments',
+    path: '/appointments',
     icon: <AiIcons.AiFillInfoCircle color="#474747" />,
     cName: 'nav-text',
   },
 
   {
     title: 'My Profile',
-    path: '/myProfile',
+    path: '/profile',
     icon: <AiIcons.AiFillProfile color="#474747" />,
     cName: 'nav-text',
   },
