@@ -1,3 +1,3 @@
 class PagesController < ApplicationController
-  def booking; end
+  def home; end
 end
