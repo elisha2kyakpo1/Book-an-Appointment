@@ -1,32 +1,42 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/jsx-indent */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-key */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/state-in-constructor */
 import React from 'react';
 
-function AddDoctor() {
-  return (
-    <div>
-      <form action="/api/v1/doctors" method="POST">
-  <div>
-    <label htmlFor="say">name</label>
-    <input type="text" name="name" id="name" />
-  </div>
-  <div>
-    <label htmlFor="to">email</label>
-    <input type="text" name="email" id="email" />
-  </div>
-  <div>
-    <label htmlFor="to">phone</label>
-    <input type="text" name="phone" id="phone" />
-  </div>
-  <div>
-    <button>Create doctor</button>
-  </div>
-      </form>
+export default class NewItemForm extends React.Component {
+    state = {
+      image: {},
+    }
 
-    </div>
-  );
+    onChange = (e) => {
+      e.persist();
+      this.setState(() => ({
+        [e.target.name]: e.target.files[0],
+      }));
+    }
+
+    onSubmit = (e) => {
+      e.preventDefault();
+      const form = new FormData();
+      form.append('image', this.state.image);
+      fetch('/api/v1/doctors', {
+        method: 'POST',
+        body: form,
+      });
+    }
+
+    render() {
+      return (
+        <div className="form">
+          <h1>New Upload</h1>
+          <form onSubmit={this.onSubmit}>
+            <label>Image Upload</label>
+            <input type="file" name="image" onChange={this.onChange} />
+            <br />
+            <br />
+            <input type="submit" />
+          </form>
+        </div>
+      );
+    }
 }
-
-export default AddDoctor;

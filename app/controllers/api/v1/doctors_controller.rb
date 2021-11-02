@@ -11,15 +11,8 @@ class Api::V1::DoctorsController < ApplicationController
   end
 
   def create
-    @doctor = Doctor.new(doctor_params)
-    return unless @doctor.save
-
-    redirect_to root_path
-  end
-
-  private
-
-  def doctor_params
-    params.permit(:name, :email, :phone, :about, :image)
+    image = Cloudinary::Uploader.upload(params[:image])
+    @doctor = Doctor.create!(name:params[:name],email:params[:email],phone:params[:phone],about:params[:about],image:image["url"])
+    render json: @doctor
   end
 end
