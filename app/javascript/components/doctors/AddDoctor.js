@@ -28,6 +28,12 @@ export default class NewItemForm extends React.Component {
     render() {
       return (
         <div className="form">
+          <label>name</label>
+          <input type="text" name="name" id="name" />
+          <label>email</label>
+          <input type="text" name="email" id="email" />
+          <label>phone</label>
+          <input type="text" name="phone" id="phone" />
           <h1>New Upload</h1>
           <form onSubmit={this.onSubmit}>
             <label>Image Upload</label>
