@@ -28,9 +28,14 @@
   position: relative;
 }
 
+.circle img {
+  width: 100%;
+}
+
 .name {
   margin-left: 25px;
   margin-top: 13px;
+  font-size: 15px;
 }
 
 .shape {
