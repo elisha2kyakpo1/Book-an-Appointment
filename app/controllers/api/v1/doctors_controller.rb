@@ -13,6 +13,5 @@ class Api::V1::DoctorsController < ApplicationController
   def create
     image = Cloudinary::Uploader.upload(params[:image])
     @doctor = Doctor.create!(name:params[:name],email:params[:email],phone:params[:phone],about:params[:about],image:image["url"])
-    render json: @doctor
   end
 end

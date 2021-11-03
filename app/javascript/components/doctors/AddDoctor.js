@@ -1,44 +1,72 @@
-/* eslint-disable no-restricted-globals */
-/* eslint-disable react/no-unused-state */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-alert */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/state-in-constructor */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import { Redirect } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default class AddDoctor extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      redirect: null,
+    };
+  }
+
     onSubmit = (e) => {
-      e.preventDefault();
-      const fileField = document.querySelector('input[type="file"]');
+      let submit = true;
       const form = new FormData();
       const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      form.append('name', name);
-      form.append('image', fileField.files[0]);
-      form.append('email', email);
-      form.append('phone', phone);
-      fetch('/api/v1/doctors', {
-        method: 'POST',
-        body: form,
-      });
-      window.location.replace('http://localhost:3000');
+      if (name === '') {
+        document.getElementById('name_error').innerHTML = 'name cant be empty';
+        submit = false;
+      }
+
+      if (submit === true) {
+        form.append('name', document.getElementById('name').value);
+        form.append('image', document.querySelector('input[type="file"]').files[0]);
+        form.append('email', document.getElementById('email').value);
+        form.append('phone', document.getElementById('phone').value);
+        form.append('about', document.getElementById('about').value);
+        fetch('/api/v1/doctors', {
+          method: 'POST',
+          body: form,
+        });
+        this.setState({ redirect: '/' });
+      }
+      e.preventDefault();
     }
 
     render() {
+      if (this.state.redirect) {
+        return <Redirect to={this.state.redirect} />;
+      }
       return (
-        <div className="form">
+        <div>
+          <div id="name_error" />
           <form onSubmit={this.onSubmit}>
-            <label>name</label>
-            <input type="text" name="name" id="name" />
-            <label>email</label>
-            <input type="text" name="email" id="email" />
-            <label>phone</label>
-            <input type="text" name="phone" id="phone" />
-            <h1>New Upload</h1>
-            <label>Image Upload</label>
-            <input type="file" name="image" />
+            <div>
+              <label>name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <br />
+              <label>email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <br />
+              <label>phone</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div>
+              <br />
+              <label>about</label>
+              <textarea name="about" id="about" />
+            </div>
+            <div>
+              <label>photo</label>
+              <input type="file" name="image" />
+            </div>
             <br />
             <br />
             <input type="submit" />

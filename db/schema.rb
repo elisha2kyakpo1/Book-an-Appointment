@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2021_10_25_081738) do
   create_table "doctors", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "phone"
+    t.string "phone"
     t.text "about"
     t.string "image"
     t.datetime "created_at", precision: 6, null: false
