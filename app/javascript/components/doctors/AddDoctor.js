@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable no-alert */
 /* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/label-has-associated-control */
@@ -33,6 +34,11 @@ const AddDoctor = () => {
       submit = false;
     }
 
+    if (isNaN(phone)) {
+      document.getElementById('phone_error').innerHTML = 'please enter a valid phone number';
+      submit = false;
+    }
+
     if (doctors.filter((doctor) => doctor.phone === phone).length > 0) {
       document.getElementById('phone_error').innerHTML = 'phone is already taken';
       submit = false;
@@ -53,6 +59,7 @@ const AddDoctor = () => {
         method: 'POST',
         body: form,
       });
+      localStorage.setItem('numberOfDoctors', doctors.length + 1);
       window.location.href = '/';
     }
     e.preventDefault();

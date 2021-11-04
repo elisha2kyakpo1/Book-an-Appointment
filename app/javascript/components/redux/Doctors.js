@@ -1,4 +1,4 @@
-const GET_DOCTORS = 'greetings/GET_DOCTORS';
+const GET_DOCTORS = 'DOCTORS/GET_DOCTORS';
 
 const loadDoctors = (json) => ({
   type: GET_DOCTORS,

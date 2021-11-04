@@ -8,27 +8,20 @@ import './Doctor.css';
 
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
-  const [doctor, setDoctor] = useState({});
 
   const dispatch = useDispatch();
   useEffect(() => {
     if (!doctors.length) {
       dispatch(getDoctors());
     }
+    if (localStorage.getItem('numberOfDoctors') > doctors.length) {
+      localStorage.setItem('numberOfDoctors', doctors.length);
+      window.location.href = '/';
+    }
   }, []);
 
-  const [body, displayBody] = useState([]);
-
-  useEffect(() => {
-    displayBody(doctors);
-  }, [doctors]);
-
-  const rndInt = Math.floor(Math.random() * 4) + 1;
-
   return (
-
     <>
-
       <div className="outter_container">
         <div className="contain">
           <div className="leading">
