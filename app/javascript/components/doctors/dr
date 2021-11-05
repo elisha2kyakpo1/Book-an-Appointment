@@ -1,6 +1,6 @@
  <form className="form-group" action="/api/v1/appointments" method="post">
         <div>
-          <label>book and appointment</label>
+          <label>book bla bla  appointment</label>
           <input type="date" id="appointment-date" name="appointment-date" />
           <select name="cars" id="ppointment-time">
             <option value="9">9:00</option>

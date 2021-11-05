@@ -7,6 +7,8 @@ import Home from './Home';
 import DoctorDetails from './doctors/DoctorDetails';
 import AddDoctor from './doctors/AddDoctor';
 import Appointment from './clients/Appointment';
+import DoctorAppointment from './clients/Doctorappointment';
+
 import Profile from './doctors/Profile';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/DetailsPage/:id" component={DoctorDetails} />
+            <Route path="/doctor/appointment" component={DoctorAppointment} />
             <Route path="/addDoctor" component={AddDoctor} />
             <Route path="/appointments" component={Appointment} />
             <Route path="/profile" component={Profile} />
