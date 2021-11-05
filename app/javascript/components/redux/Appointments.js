@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-const GET_APPOINTMENTS = 'greetings/GET_APPOINTMENTS';
+const GET_APPOINTMENTS = 'APPOINTMENTS/GET_APPOINTMENTS';
 
 const loadAppointments = (json) => ({
   type: GET_APPOINTMENTS,

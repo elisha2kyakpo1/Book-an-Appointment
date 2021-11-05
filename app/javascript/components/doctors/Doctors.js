@@ -1,19 +1,26 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 import { useSelector, useDispatch } from 'react-redux';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getDoctors } from '../redux/Doctors';
+import { getAppointments } from '../redux/Appointments';
 import './Doctor.css';
 
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
+  const appointments = useSelector((state) => state.appointmentReducer);
 
   const dispatch = useDispatch();
   useEffect(() => {
     if (!doctors.length) {
       dispatch(getDoctors());
     }
+
+    if (!appointments.length) {
+      dispatch(getAppointments());
+    }
+
     if (localStorage.getItem('numberOfDoctors') > doctors.length) {
       localStorage.setItem('numberOfDoctors', doctors.length);
       window.location.href = '/';

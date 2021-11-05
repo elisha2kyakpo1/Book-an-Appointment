@@ -1,23 +1,27 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useEffect } from 'react';
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
 import './bookappointment.css';
 
 function DoctorAppointment() {
   const { id } = useParams();
+  const appointments = useSelector((state) => state.appointmentReducer);
 
-  function hidePopUp() {
+  function onSubmit(e) {
     document.querySelector('.popup-box').style.display = 'none';
     document.querySelector('.doctor').style.display = 'block';
+    const date = document.getElementById('appointment_date').value;
+    const time = document.getElementById('appointment_time').value;
   }
 
   return (
     <div className="popup-box">
       <form action="/api/v1/appointments" method="post" className="box">
-        <span className="close-icon" onClick={hidePopUp}>x</span>
+        <span className="close-icon" onClick={onSubmit}>x</span>
         {DoctorAppointment.content}
         <label>book bla bla bla</label>
         <input type="date" id="appointment_date" name="appointment_date" />
@@ -43,9 +47,8 @@ function DoctorAppointment() {
           <option value="18:00">18:00</option>
         </select>
         <input type="hidden" id="doctor_id" name="doctor_id" value={id} />
-        <input type="submit" value="Submit" onClick={hidePopUp} />
+        <input type="submit" value="Submit" onClick={onSubmit} />
       </form>
-
     </div>
 
   );
