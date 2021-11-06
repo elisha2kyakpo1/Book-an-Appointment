@@ -21,8 +21,8 @@ const Doctors = () => {
       dispatch(getAppointments());
     }
 
-    if (localStorage.getItem('numberOfDoctors') > doctors.length) {
-      localStorage.setItem('numberOfDoctors', doctors.length);
+    if (localStorage.getItem('addDoctor') !== null) {
+      localStorage.removeItem('addDoctor');
       window.location.href = '/';
     }
   }, []);

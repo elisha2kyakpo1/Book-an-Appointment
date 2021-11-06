@@ -1,7 +1,7 @@
 class Api::V1::AppointmentsController < ApplicationController
   skip_before_action :verify_authenticity_token
     def index
-        @appointments =  Appointment.where(client_id:current_client.id)
+        @appointments =  Appointment.all
         render json:  @appointments
       end
 

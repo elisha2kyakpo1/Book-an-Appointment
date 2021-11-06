@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
@@ -16,6 +17,14 @@ function DoctorAppointment() {
     document.querySelector('.doctor').style.display = 'block';
     const date = document.getElementById('appointment_date').value;
     const time = document.getElementById('appointment_time').value;
+    if ((appointments.filter((appointment) => appointment.appointment_time === time).length > 0)
+    && (appointments.filter((appointment) => appointment.appointment_date === date).length > 0)
+    && (appointments.filter((appointment) => appointment.doctor_id === id).length > 0)) {
+      alert('doctor_not_avilable');
+      e.preventDefault();
+    }
+    alert(appointments[0].doctor_id);
+    e.preventDefault();
   }
 
   return (
@@ -24,11 +33,11 @@ function DoctorAppointment() {
         <span className="close-icon" onClick={onSubmit}>x</span>
         {DoctorAppointment.content}
         <label>book bla bla bla</label>
-        <input type="date" id="appointment_date" name="appointment_date" />
+        <input type="date" id="appointment_date" name="appointment_time" />
         <select name="appointment_time" id="appointment_time">
-          <option value="9">9:00</option>
+          <option value="9:00">9:00</option>
           <option value="9:30">9:30</option>
-          <option value="10">10:00</option>
+          <option value="10:00">10:00</option>
           <option value="10:30">10:30</option>
           <option value="11:00">11:00</option>
           <option value="11:30">11:30</option>

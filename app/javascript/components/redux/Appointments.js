@@ -18,11 +18,13 @@ const appointmentReducer = (state = [], action) => {
       return action.json.map((appointment) => {
         const {
           appointment_date,
+          appointment_time,
           client_id,
           doctor_id,
         } = appointment;
         return {
           appointment_date,
+          appointment_time,
           client_id,
           doctor_id,
         };

@@ -59,7 +59,7 @@ const AddDoctor = () => {
         method: 'POST',
         body: form,
       });
-      localStorage.setItem('numberOfDoctors', doctors.length + 1);
+      localStorage.setItem('addDoctor', true);
       window.location.href = '/';
     }
     e.preventDefault();
