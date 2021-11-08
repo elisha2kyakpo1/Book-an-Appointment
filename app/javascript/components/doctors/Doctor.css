@@ -213,11 +213,6 @@ nav {
     left: 70px;
   }
 
-  .nav-menu {
-    top: 100px;
-    width: 300px;
-  }
-
   .contain {
     width: 70%;
   }
@@ -226,5 +221,6 @@ nav {
     width: 251px;
     margin-left: 10px;
     top: 122px;
+    height: 300px;
   }
 }
