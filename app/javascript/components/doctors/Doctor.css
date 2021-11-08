@@ -91,7 +91,8 @@
 @media screen and (min-width: 768px) {
   .row {
     width: 32vw;
-    margin-left: 4vw;
+    margin-left: 30vw;
+    margin-top: 5px;
   }
 
   .please {
@@ -117,8 +118,8 @@
 
   .nav-menu {
     width: 5vw;
-    margin-left: -5px;
-    margin-top: 255px;
+    top: 130px;
+    left: 10vw;
   }
 
   .span1 {
@@ -205,5 +206,9 @@
   .nav-menu {
     top: 100px;
     width: 300px;
+  }
+
+  .contain {
+    width: 70%;
   }
 }
