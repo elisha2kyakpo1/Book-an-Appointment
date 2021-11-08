@@ -1,5 +1,5 @@
 .contain {
-  width: 60%;
+  width: 96%;
   border: solid 30px #f1f1f1;
   margin-left: 2%;
 }
@@ -45,9 +45,8 @@
 }
 
 .nav-menu {
-  width: 1vw;
   position: absolute;
-  margin-left: -98px;
+  top: 902px;
 }
 
 .span1 {
@@ -82,6 +81,11 @@
 
 .vl_left {
   margin-left: -3%;
+}
+
+.row {
+  margin-top: 824px;
+  margin-left: 123px;
 }
 
 @media screen and (min-width: 768px) {
@@ -196,5 +200,10 @@
   .left_side_bar {
     position: absolute;
     left: 70px;
+  }
+
+  .nav-menu {
+    top: 100px;
+    width: 300px;
   }
 }

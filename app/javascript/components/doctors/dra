@@ -1,0 +1,32 @@
+ <form onSubmit={onSubmit}>
+            <div>
+              <label>name</label>
+              <input type="text" name="name" id="name" className="filed" />
+            </div>
+            <div>
+              <br />
+              <label>email</label>
+              <input type="text" name="email" id="email" className="filed" />
+            </div>
+            <div>
+              <br />
+              <label className="phone">phone</label>
+              <input type="text" name="phone" id="phone" className="field" />
+            </div>
+            <div>
+              <br />
+              <label>about</label>
+              <textarea name="about" id="about" className="field" />
+            </div>
+            <div>
+              <label>photo</label>
+              <input type="file" name="image" />
+            </div>
+            <br />
+            <br />
+            <input type="submit" />
+          </form>
+
+
+
+          
