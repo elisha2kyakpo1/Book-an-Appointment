@@ -37,7 +37,6 @@ const Doctors = () => {
         <div className="left_side_bar">
           <Sidebar />
         </div>
-        <div className="vl vl_left" />
         <div className="contain">
           <div className="leading">
             <h1 className="please">LEADING DOCTORS</h1>

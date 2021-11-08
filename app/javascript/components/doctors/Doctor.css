@@ -6,6 +6,8 @@
 
 .outter_container {
   width: 95vw;
+  top: 549px;
+  left: -26px;
 }
 
 .please {
@@ -46,7 +48,6 @@
 
 .nav-menu {
   position: absolute;
-  top: 902px;
 }
 
 .span1 {
@@ -84,8 +85,23 @@
 }
 
 .row {
-  margin-top: 824px;
-  margin-left: 123px;
+  width: 100px;
+  margin-left: 150px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.nav-menu {
+  position: absolute;
+  width: 100px;
+  top: 92px;
+  margin-left: 40px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -125,26 +141,14 @@
   .span1 {
     font-size: 19px;
   }
+ 
+.outter_container {
+  width: 95vw;
+  top: 20px;
+  left: -26px;
 }
-
+}
 @media screen and (min-width: 1024px) {
-  .row {
-    margin-left: -5px;
-  }
-
-  .sh_left {
-    margin-left: -20px;
-  }
-
-  .opposite {
-    transform: rotate(180deg);
-    margin-right: -20px;
-  }
-
-  .material-icons {
-    font-size: 30px;
-  }
-
   .leading {
     width: 30vw;
     margin-left: 13vw;
@@ -176,12 +180,18 @@
   .span1 {
     font-size: 27px;
   }
+
+  .nav-menu {
+    width: 251px;
+    margin-left: 112px;
+    top: -23px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .row {
     width: 20vw;
-    margin-left: 14vw;
+    margin-left: 20vw;
   }
 
   .leading {
@@ -210,5 +220,11 @@
 
   .contain {
     width: 70%;
+  }
+
+  .nav-menu {
+    width: 251px;
+    margin-left: 10px;
+    top: 122px;
   }
 }
