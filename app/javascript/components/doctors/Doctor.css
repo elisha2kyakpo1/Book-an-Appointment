@@ -1,12 +1,11 @@
 .contain {
-  width: 96%;
+  width: 60%;
   border: solid 30px #f1f1f1;
   margin-left: 2%;
 }
 
 .outter_container {
-  width: 50vw;
-  height: 80vh;
+  width: 95vw;
 }
 
 .please {
@@ -38,8 +37,51 @@
   font-size: 15px;
 }
 
-.shape {
-  display: none;
+.hero-container {
+  height: 60vh;
+  margin-left: 42px;
+  margin-bottom: -90px;
+  position: relative;
+}
+
+.nav-menu {
+  width: 1vw;
+  position: absolute;
+  margin-left: -98px;
+}
+
+.span1 {
+  font-size: 12px;
+}
+
+.care {
+  font-size: 12px;
+  width: 250px;
+}
+
+.carepage {
+  margin-left: 68px;
+  width: 208px;
+}
+
+.btn--large {
+  width: 148px;
+}
+
+.doctors {
+  position: relative;
+}
+
+.vl {
+  border-left: 1px solid #f1f1f1;
+  position: absolute;
+  height: 90%;
+  left: 27%;
+  top: 5.5%;
+}
+
+.vl_left {
+  margin-left: -3%;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,6 +100,26 @@
     font-size: 18px;
     width: 120px;
   }
+
+  .hero-container > h1 {
+    font-size: 36px;
+    margin-top: 25px;
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+    width: 183px;
+  }
+
+  .nav-menu {
+    width: 5vw;
+    margin-left: -5px;
+    margin-top: 255px;
+  }
+
+  .span1 {
+    font-size: 19px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -65,21 +127,8 @@
     margin-left: -5px;
   }
 
-  .shape {
-    display: block;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(to right, #f1f1f1 0%, #f1f1f1 25%, #d0d7de 25%, #d0d7de 40%, 50%, #d0d7de 100%);
-    border-radius: 30px / 50px;
-    position: relative;
-  }
-
   .sh_left {
     margin-left: -20px;
-  }
-
-  .shape_doctors {
-    display: flex;
   }
 
   .opposite {
@@ -91,20 +140,6 @@
     font-size: 30px;
   }
 
-  .inner_left {
-    position: absolute;
-    top: 35px;
-    left: 32px;
-    transform: rotate(270deg);
-  }
-
-  .inner_right {
-    position: absolute;
-    top: 28px;
-    left: 33px;
-    transform: rotate(270deg);
-  }
-
   .leading {
     width: 30vw;
     margin-left: 13vw;
@@ -113,6 +148,28 @@
   .please,
   .select {
     width: 25vw;
+  }
+
+  .hero-container > h1 {
+    font-size: 45px;
+    margin-top: 10px;
+  }
+
+  .hero-container > p {
+    font-size: 40px;
+  }
+
+  .hero-btns .btn {
+    font-size: 40px;
+  }
+
+  .nav-menu {
+    margin-left: -1px;
+    margin-top: 150px;
+  }
+
+  .span1 {
+    font-size: 27px;
   }
 }
 
@@ -128,16 +185,16 @@
     padding-top: 60px;
   }
 
-  .inner_left,
-  .inner_right {
-    left: 41px;
-  }
-
   .circle img {
     position: absolute;
     width: 85%;
     height: 65%;
     top: 23px;
     left: 5px;
+  }
+
+  .left_side_bar {
+    position: absolute;
+    left: 70px;
   }
 }

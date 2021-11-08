@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './Doctor.css';
 
 const AddDoctor = () => {
   const doctors = useSelector((state) => state.doctorReducer);
@@ -69,39 +70,41 @@ const AddDoctor = () => {
 
     <>
 
-      <div>
-        <div id="name_error" />
-        <div id="email_error" />
-        <div id="phone_error" />
-        <div id="image_error" />
-        <form onSubmit={onSubmit}>
-          <div>
-            <label>name</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div>
+      <div className="outter_container red">
+        <div className="contain">
+          <div id="name_error" />
+          <div id="email_error" />
+          <div id="phone_error" />
+          <div id="image_error" />
+          <form onSubmit={onSubmit}>
+            <div>
+              <label>name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <br />
+              <label>email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <br />
+              <label>phone</label>
+              <input type="text" name="phone" id="phone" />
+            </div>
+            <div>
+              <br />
+              <label>about</label>
+              <textarea name="about" id="about" />
+            </div>
+            <div>
+              <label>photo</label>
+              <input type="file" name="image" />
+            </div>
             <br />
-            <label>email</label>
-            <input type="text" name="email" id="email" />
-          </div>
-          <div>
             <br />
-            <label>phone</label>
-            <input type="text" name="phone" id="phone" />
-          </div>
-          <div>
-            <br />
-            <label>about</label>
-            <textarea name="about" id="about" />
-          </div>
-          <div>
-            <label>photo</label>
-            <input type="file" name="image" />
-          </div>
-          <br />
-          <br />
-          <input type="submit" />
-        </form>
+            <input type="submit" />
+          </form>
+        </div>
       </div>
     </>
   );

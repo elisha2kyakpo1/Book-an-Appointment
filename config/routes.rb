@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'addDoctor', to: 'pages#home'
   get 'DetailsPage/:id', to: 'pages#home'
+  get 'doctors', to: 'pages#home'
   get 'DetailsPage/:id/book_appointment', to: 'pages#home'
   get '/doctor/appointment', to: 'pages#home'
   devise_for :clients

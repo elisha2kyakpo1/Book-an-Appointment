@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable no-alert */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -14,17 +15,15 @@ function DoctorAppointment() {
 
   function onSubmit(e) {
     document.querySelector('.popup-box').style.display = 'none';
-    document.querySelector('.doctor').style.display = 'block';
     const date = document.getElementById('appointment_date').value;
     const time = document.getElementById('appointment_time').value;
+    const doctorId = parseInt(id, 10);
     if ((appointments.filter((appointment) => appointment.appointment_time === time).length > 0)
     && (appointments.filter((appointment) => appointment.appointment_date === date).length > 0)
-    && (appointments.filter((appointment) => appointment.doctor_id === id).length > 0)) {
-      alert('doctor_not_avilable');
+    && (appointments.filter((appointment) => appointment.doctor_id === doctorId).length > 0)) {
+      alert('appointment not available');
       e.preventDefault();
     }
-    alert(appointments[0].doctor_id);
-    e.preventDefault();
   }
 
   return (
@@ -32,8 +31,7 @@ function DoctorAppointment() {
       <form action="/api/v1/appointments" method="post" className="box">
         <span className="close-icon" onClick={onSubmit}>x</span>
         {DoctorAppointment.content}
-        <label>book bla bla bla</label>
-        <input type="date" id="appointment_date" name="appointment_time" />
+        <input type="date" id="appointment_date" name="appointment_date" />
         <select name="appointment_time" id="appointment_time">
           <option value="9:00">9:00</option>
           <option value="9:30">9:30</option>
