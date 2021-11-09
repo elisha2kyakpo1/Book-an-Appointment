@@ -14,5 +14,10 @@ class Api::V1::AppointmentsController < ApplicationController
     redirect_to root_path, flash: { notice: "Appointment_date, #{@appointment.appointment_date},Appointment_time, #{@appointment.appointment_time},
       Doctor, #{@appointment.doctor.name}" }
   end
+
+  def show
+    @appointments = Appointment.where(client_id:current_client.id)
+    render json: @appointments
+  end  
 end
 # rubocop:enable all
