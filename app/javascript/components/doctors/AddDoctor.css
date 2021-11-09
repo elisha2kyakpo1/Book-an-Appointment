@@ -1,0 +1,79 @@
+.contain {
+  margin-top: -136px;
+}
+
+form {
+  margin-left: 60%;
+  width: 28vw;
+}
+
+label {
+  margin-right: 10%;
+}
+
+.add_doctor {
+  position: relative;
+}
+
+form .field {
+  width: 60%;
+}
+
+.nav-menu {
+  position: absolute;
+  width: 0.1px;
+  top: 134px;
+  margin-left: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  form {
+    margin-left: 40%;
+    width: 34vw;
+  }
+
+  .phone {
+    margin-right: 40px;
+  }
+
+  .nav-menu {
+    top: 319px;
+    margin-left: 92px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .nav-menu {
+    top: 369px;
+    margin-left: 155px;
+    width: 259px;
+}
+
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    form {
+      width: 20vw;
+  }
+
+  .nav-menu {
+    margin-left: 414px;
+    top: 115px;
+  }
+  
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

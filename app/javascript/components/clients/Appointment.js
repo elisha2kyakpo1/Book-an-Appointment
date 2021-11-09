@@ -3,7 +3,7 @@ import React from 'react';
 function Appointment() {
   return (
     <div>
-      My appointments
+      <h1>My appointments</h1>
     </div>
   );
 }

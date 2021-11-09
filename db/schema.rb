@@ -16,9 +16,15 @@ ActiveRecord::Schema.define(version: 2021_10_25_081738) do
   enable_extension "plpgsql"
 
   create_table "appointments", force: :cascade do |t|
-    t.datetime "appointment_date"
+    t.string "appointment_date"
+    t.string "appointment_time"
+    t.datetime "appointment_date_and_time"
+    t.bigint "client_id"
+    t.bigint "doctor_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["client_id"], name: "index_appointments_on_client_id"
+    t.index ["doctor_id"], name: "index_appointments_on_doctor_id"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -36,14 +42,13 @@ ActiveRecord::Schema.define(version: 2021_10_25_081738) do
   create_table "doctors", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "phone"
+    t.string "phone"
     t.text "about"
     t.string "image"
-    t.bigint "client_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["client_id"], name: "index_doctors_on_client_id"
   end
 
-  add_foreign_key "doctors", "clients"
+  add_foreign_key "appointments", "clients"
+  add_foreign_key "appointments", "doctors"
 end

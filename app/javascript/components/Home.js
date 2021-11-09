@@ -1,9 +1,12 @@
 import React from 'react';
-import Sidebar from './menu/Sidebar';
+import HomePage from './HomePage';
+import './Home.css';
 
 const Home = () => (
-  <div>
-    <Sidebar />
+  <div className="homepage outter_container">
+    <div className="contain">
+      <HomePage />
+    </div>
 
   </div>
 );

@@ -1,15 +1,20 @@
 Rails.application.routes.draw do
-  get '/booking/', to: 'pages#booking'
   root 'pages#home'
+  get 'addDoctor', to: 'pages#home'
+  get 'DetailsPage/:id', to: 'pages#home'
+  get 'doctors', to: 'pages#home'
+  get 'DetailsPage/:id/book_appointment', to: 'pages#home'
+  get '/doctor/appointment', to: 'pages#home'
   devise_for :clients
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
-      resources :clients do
-      resources :doctors, only: %i[index show, new, create] do
-        resources :appointments, only: %i[new create show]
-      end
-    end
+      
+      resources :doctors  
+      resources :appointments
+      resources :clients
+  
     end
   end
 end
+

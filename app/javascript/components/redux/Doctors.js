@@ -1,4 +1,4 @@
-const GET_DOCTORS = 'greetings/GET_DOCTORS';
+const GET_DOCTORS = 'DOCTORS/GET_DOCTORS';
 
 const loadDoctors = (json) => ({
   type: GET_DOCTORS,
@@ -6,7 +6,7 @@ const loadDoctors = (json) => ({
 });
 
 const getDoctors = () => (dispatch) => {
-  fetch('https://book-doctor-appointment.herokuapp.com/doctors')
+  fetch('api/v1/doctors')
     .then((response) => response.json())
     .then((json) => dispatch(loadDoctors(json)));
 };
@@ -20,14 +20,14 @@ const doctorReducer = (state = [], action) => {
           name,
           email,
           phone,
-          about,
+          image,
         } = doctor;
         return {
           id,
           name,
           phone,
           email,
-          about,
+          image,
         };
       });
     default:
