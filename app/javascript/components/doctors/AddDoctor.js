@@ -4,7 +4,8 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './Doctor.css';
+import Sidebar from '../menu/Sidebar';
+import './AddDoctor.css';
 
 const AddDoctor = () => {
   const doctors = useSelector((state) => state.doctorReducer);
@@ -71,38 +72,34 @@ const AddDoctor = () => {
     <>
 
       <div className="outter_container red">
+        <Sidebar />
         <div className="contain">
           <div id="name_error" />
           <div id="email_error" />
           <div id="phone_error" />
           <div id="image_error" />
           <form onSubmit={onSubmit}>
-            <div>
-              <label>name</label>
-              <input type="text" name="name" id="name" />
+            <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Name</label>
+              <input type="text" className="form-control" id="name" name="name" placeholder="Name" />
             </div>
-            <div>
-              <br />
-              <label>email</label>
-              <input type="text" name="email" id="email" />
+            <div className="form-group">
+              <label htmlFor="exampleInputEmail1">Email</label>
+              <input type="email" className="form-control" id="email" name="email" placeholder="Email" />
             </div>
-            <div>
-              <br />
-              <label>phone</label>
-              <input type="text" name="phone" id="phone" />
+            <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Phone</label>
+              <input type="text" className="form-control" id="phone" name="phone" placeholder="Phone" />
             </div>
-            <div>
-              <br />
-              <label>about</label>
-              <textarea name="about" id="about" />
+            <div className="form-group">
+              <label htmlFor="exampleInputPassword1">About</label>
+              <input type="text" className="form-control" id="about" name="about" placeholder="About" />
             </div>
-            <div>
-              <label>photo</label>
-              <input type="file" name="image" />
+            <div className="form-group">
+              <label htmlFor="exampleInputPassword1">Image</label>
+              <input type="file" className="form-control" id="phone" name="phone" placeholder="Password" />
             </div>
-            <br />
-            <br />
-            <input type="submit" />
+            <button type="submit" className="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
