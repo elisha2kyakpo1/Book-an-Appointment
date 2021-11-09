@@ -59,11 +59,16 @@ form .field {
   }
 
   .nav-menu {
-    margin-left: 414px;
-    top: 115px;
+    margin-left: 24px;
+    top: -30px;
   }
-  
-    }
+
+  .side_add_doctor {
+    position: absolute;
+    top: 170px;
+    left: 360px;
+  }
+}
 
 
 

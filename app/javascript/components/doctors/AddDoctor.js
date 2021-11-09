@@ -72,7 +72,9 @@ const AddDoctor = () => {
     <>
 
       <div className="outter_container red">
-        <Sidebar />
+        <div className="side_add_doctor">
+          <Sidebar />
+        </div>
         <div className="contain">
           <div id="name_error" />
           <div id="email_error" />
@@ -93,7 +95,7 @@ const AddDoctor = () => {
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">About</label>
-              <input type="text" className="form-control" id="about" name="about" placeholder="About" />
+              <textarea className="form-control" id="about" name="about" placeholder="About" />
             </div>
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">Image</label>

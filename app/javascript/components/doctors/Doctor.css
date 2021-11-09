@@ -104,6 +104,10 @@ nav {
 
 }
 
+.btn--large {
+ 
+}
+
 @media screen and (min-width: 768px) {
   .row {
     width: 32vw;
@@ -219,8 +223,15 @@ nav {
 
   .nav-menu {
     width: 251px;
-    margin-left: 10px;
-    top: 122px;
+    margin-left: 44px;
+    top: -14px;
     height: 300px;
+  }
+
+  .outter_container {
+    width: 95vw;
+    top: 106px;
+    left: -26px;
+    max-height: 120vh;
   }
 }
