@@ -1,6 +1,7 @@
-{clientAppointments.map((appointment) => (
-  <div>
-    {appointment.date}
-    {appointment.time}
+{doctors.filter((doctor) => doctor.id == id).map((doc) => (
+  <div className="doctor">
+    <div className="circle">
+      <img src={doc.image} alt="doctors" />
+    </div>
   </div>
 ))}
