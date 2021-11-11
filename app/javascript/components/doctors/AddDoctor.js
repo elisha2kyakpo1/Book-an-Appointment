@@ -71,7 +71,7 @@ const AddDoctor = () => {
 
     <>
 
-      <div className="outter_container red">
+      <div className="outter_container">
         <div className="side_add_doctor">
           <Sidebar />
         </div>

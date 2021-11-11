@@ -1,6 +1,37 @@
+.appointment_header {
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+
+.appointment_row{
+    margin-left: 1px;
+    width: 85%;
+}
+
 .appointment {
-    border: solid 0.2px blue;
-    margin-left: -130px;
-    margin-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 9px;
+}
+
+@media screen and (min-width: 767px) {
+.mobile_container {
+    margin-top: 50px;
+}
+
+.appointment_row{
+    margin-left: 80px;
+}
+
+.appointment {
+    width: 140px;
+    font-size: 17px;
+}
+
+.appointment_header {
+    font-size: 30px;
+    margin-left: 1px;
+}
+
 
 }
