@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { getDoctors } from "../redux/Doctors";
 import { getAppointments } from "../redux/Appointments";
 import Sidebar from "../menu/Sidebar";
-
+import "./Doctor2.css";
+import NavBar from "../menu/NavBar";
+import "./Doctor2.css";
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
   const appointments = useSelector((state) => state.appointmentReducer);
@@ -31,37 +33,34 @@ const Doctors = () => {
   }, []);
 
   return (
-    <>
-      <div className="outter_container doctors">
-        <div className="left_side_bar">
-          <Sidebar />
+    <div className="main-container ">
+      <div>
+        <NavBar />
+      </div>
+
+      <div className="doctor-list">
+        <div>
+          <h1>LEADING DOCTORS</h1>
+          <hr className="break" />
+          <h4>please select a doctor</h4>
         </div>
-        <div className="contain">
-          <div className="leading">
-            <h1 className="please">LEADING DOCTORS</h1>
-            <h2 className="select">please select a doctor</h2>
-          </div>
-          <div className="container">
-            <div className="row">
-              {doctors.map((doctor) => (
-                <div className="col-12 col-md-6 col-lg-4">
-                  <div className="doctor">
-                    <div className="circle">
-                      <img src={doctor.image} alt="doctors" />
-                    </div>
-                    <h2 className="name">
-                      <Link to={`/DetailsPage/${doctor.id}`}>
-                        {doctor.name}
-                      </Link>
-                    </h2>
-                  </div>
-                </div>
-              ))}
+
+        <div className="doctors">
+          {doctors.map((doctor) => (
+            <div className="doctor">
+              <div className="image">
+                <img src={doctor.image} alt="doctors" />
+              </div>
+              <h2>
+                <Link className="name" to={`/DetailsPage/${doctor.id}`}>
+                  {doctor.name}
+                </Link>
+              </h2>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

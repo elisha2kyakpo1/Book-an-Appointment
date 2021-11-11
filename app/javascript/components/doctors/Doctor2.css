@@ -1,0 +1,43 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 50px;
+  border: solid 30px #f1f1f1;
+  padding: 50px;
+}
+
+.doctor-list {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.doctor {
+  margin: 10px;
+}
+
+img {
+  width: 150px;
+}
+
+.break {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: 20%;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.name {
+  color: white;
+}

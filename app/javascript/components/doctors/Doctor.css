@@ -1,13 +1,13 @@
-.contain {
-  width: 96%;
-  border: solid 30px #f1f1f1;
-  margin-left: 2%;
-}
-
 .outter_container {
   width: 95vw;
   top: 549px;
   left: -26px;
+}
+
+.contain {
+  width: 96%;
+  border: solid 30px #f1f1f1;
+  margin-left: 2%;
 }
 
 .please {
@@ -101,11 +101,6 @@ nav {
   width: 100px;
   top: 92px;
   margin-left: 40px;
-
-}
-
-.btn--large {
- 
 }
 
 @media screen and (min-width: 768px) {
@@ -145,12 +140,12 @@ nav {
   .span1 {
     font-size: 19px;
   }
- 
-.outter_container {
-  width: 95vw;
-  top: 20px;
-  left: -26px;
-}
+
+  .outter_container {
+    width: 95vw;
+    top: 20px;
+    left: -26px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .leading {
