@@ -3,18 +3,23 @@ import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getDoctors } from '../redux/Doctors';
-import { getAppointments } from '../redux/Appointments';
+import { getAppointments, getClientAppointments } from '../redux/Appointments';
 import Sidebar from '../menu/Sidebar';
 import './Doctor.css';
 
 const Doctors = () => {
   const doctors = useSelector((state) => state.doctorReducer);
   const appointments = useSelector((state) => state.appointmentReducer);
+  const clientAppointments = useSelector((state) => state.clientAppointmentReducer);
 
   const dispatch = useDispatch();
   useEffect(() => {
     if (!doctors.length) {
       dispatch(getDoctors());
+    }
+
+    if (!clientAppointments.length) {
+      dispatch(getClientAppointments());
     }
 
     if (!appointments.length) {

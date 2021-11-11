@@ -1,9 +1,11 @@
+/* eslint-disable no-alert */
+/* eslint-disable no-empty */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-key */
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import DoctorAppointment from '../clients/Doctorappointment';
 import DoctorButton from './DoctorButton';
 import './Doctor.css';
@@ -11,24 +13,39 @@ import './Doctor.css';
 function DoctorDetails() {
   const doctors = useSelector((state) => state.doctorReducer);
   const { id } = useParams();
+  const doctorId = parseInt(id, 10);
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
   };
 
+  if (!localStorage.getItem('stored_doctors') || doctors.length > localStorage.getItem('current_number_of_doctors')) {
+    localStorage.setItem('stored_doctors', JSON.stringify(doctors));
+  }
+
+  const storedDoctors = JSON.parse(localStorage.getItem('stored_doctors'));
+  localStorage.setItem('current_number_of_doctors', storedDoctors.length);
+
   return (
     <div className="outter_container">
       <div className="contain">
         <div className="doctor">
-          {doctors.filter((doctor) => doctor.id == id).map((doc) => (
-            <div className="doctor">
-              <div className="circle">
-                <img src={doc.image} alt="doctors" />
-              </div>
+
+          <div className="doctor">
+            <div className="circle">
+              <img src={storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
+              doctor.image
+              ))}
+             alt="doctor" />
             </div>
-          ))}
+          </div>
         </div>
+        <div>
+        {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
+              <div>{doctor.name}</div>
+            ))}
+          </div>
         {isOpen && (
         <DoctorAppointment
           content={(
@@ -56,3 +73,24 @@ function DoctorDetails() {
 }
 
 export default DoctorDetails;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
