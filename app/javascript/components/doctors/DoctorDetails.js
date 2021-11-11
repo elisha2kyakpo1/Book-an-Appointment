@@ -34,11 +34,18 @@ function DoctorDetails() {
 
           <div className="doctor">
             <div className="circle">
-              <img src={storedDoctors[doctorId - 1].image} alt="doctor" />
+              <img src={storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
+              doctor.image
+              ))}
+             alt="doctor" />
             </div>
           </div>
         </div>
-        <div>{storedDoctors[doctorId - 1 ].name}</div>
+        <div>
+        {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
+              <div>{doctor.name}</div>
+            ))}
+          </div>
         {isOpen && (
         <DoctorAppointment
           content={(
@@ -66,3 +73,24 @@ function DoctorDetails() {
 }
 
 export default DoctorDetails;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
