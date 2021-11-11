@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getClientAppointments } from '../redux/Appointments';
+import Sidebar from '../menu/Sidebar';
 import './appointment.css';
 
 function Appointment() {
@@ -24,29 +25,36 @@ function Appointment() {
   }, []);
 
   return (
-    <div>
-      <h1>My appointments</h1>
-      <div className="row">
-        {clientAppointments.map((appointment) => (
-          <div className="col-12 col-md-6 col-lg-4">
-            <div className="appointment">
-              <div>
-                Appointment Date&nbsp;&nbsp;
-                {appointment.appointment_date}
+    <div className="outter_container">
+      <div className="contain mobile_container d-flex">
+        <div className="mobile_sidebar">
+          <Sidebar />
+        </div>
+        <div>
+          <h1 className="appointment_header text-center">My appointments</h1>
+          <div className="row appointment_row">
+            {clientAppointments.map((appointment) => (
+              <div className="col-12 col-md-6 col-lg-4">
+                <div className="appointment">
+                  <div>
+                    Date&nbsp;&nbsp;
+                    {appointment.appointment_date}
+                  </div>
+                  <div>
+                    Time&nbsp;&nbsp;
+                    {appointment.appointment_time}
+                  </div>
+                  <div>
+                    Doctor-&nbsp;&nbsp;
+                    {storedDoctors.filter((doctor) => doctor.id === appointment.doctor_id).map((doctor) => (
+                      doctor.name
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div>
-                Time&nbsp;&nbsp;
-                {appointment.appointment_time}
-              </div>
-              <div className="d-flex p-2">
-                Doctor's Name&nbsp;&nbsp;
-                {storedDoctors.filter((doctor) => doctor.id === appointment.doctor_id).map((doctor) => (
-                  <div>{doctor.name}</div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
