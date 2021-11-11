@@ -25,6 +25,7 @@
 
 img {
   width: 150px;
+  border-radius: 50%;
 }
 
 .break {
@@ -40,4 +41,8 @@ h4 {
 
 .name {
   color: white;
+}
+
+.circle {
+  background-color: #d4ece9;
 }
