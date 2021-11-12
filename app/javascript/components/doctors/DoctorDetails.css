@@ -1,0 +1,10 @@
+.doctor-image {
+  width: 400px;
+  height: auto;
+}
+
+.contain {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+}

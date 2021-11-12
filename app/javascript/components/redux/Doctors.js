@@ -1,4 +1,4 @@
-const GET_DOCTORS = 'DOCTORS/GET_DOCTORS';
+const GET_DOCTORS = "DOCTORS/GET_DOCTORS";
 
 const loadDoctors = (json) => ({
   type: GET_DOCTORS,
@@ -6,7 +6,7 @@ const loadDoctors = (json) => ({
 });
 
 const getDoctors = () => (dispatch) => {
-  fetch('api/v1/doctors')
+  fetch("api/v1/doctors")
     .then((response) => response.json())
     .then((json) => dispatch(loadDoctors(json)));
 };
@@ -15,17 +15,12 @@ const doctorReducer = (state = [], action) => {
   switch (action.type) {
     case GET_DOCTORS:
       return action.json.map((doctor) => {
-        const {
-          id,
-          name,
-          email,
-          phone,
-          image,
-        } = doctor;
+        const { id, name, about, email, phone, image } = doctor;
         return {
           id,
           name,
           phone,
+          about,
           email,
           image,
         };
@@ -35,7 +30,4 @@ const doctorReducer = (state = [], action) => {
   }
 };
 
-export {
-  doctorReducer,
-  getDoctors,
-};
+export { doctorReducer, getDoctors };
