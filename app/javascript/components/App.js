@@ -10,12 +10,14 @@ import Appointment from './clients/Appointment';
 import DoctorAppointment from './clients/Doctorappointment';
 
 import Profile from './doctors/Profile';
+import SideBar from './menu/Sidebar';
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
-        <div className="page container">
+        <div className="page-container">
+        <SideBar />
           <Switch>
             <Route exact path="/" component={Doctors} />
             <Route path="/DetailsPage/:id" component={DoctorDetails} />

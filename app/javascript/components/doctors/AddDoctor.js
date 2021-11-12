@@ -4,8 +4,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Sidebar from '../menu/Sidebar';
-import './AddDoctor.css';
 
 const AddDoctor = () => {
   const doctors = useSelector((state) => state.doctorReducer);
@@ -57,7 +55,7 @@ const AddDoctor = () => {
       form.append('email', email);
       form.append('phone', phone);
       form.append('about', document.getElementById('about').value);
-      fetch('/api/v1/doctors', {
+      fetch('http://localhost:3000/api/v1/doctors', {
         method: 'POST',
         body: form,
       });
@@ -72,15 +70,11 @@ const AddDoctor = () => {
     <>
 
       <div className="outter_container">
-        <div className="side_add_doctor">
-          <Sidebar />
-        </div>
         <div className="contain">
-          <div id="name_error" />
-          <div id="email_error" />
-          <div id="phone_error" />
-          <div id="image_error" />
-          <form onSubmit={onSubmit}>
+          <div className="side_add_doctor">
+            <h4>Add a doctor</h4>
+          </div>
+          <form onSubmit={onSubmit} className="add_doctor_form">
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Name</label>
               <input type="text" className="form-control" id="name" name="name" placeholder="Name" />

@@ -6,7 +6,7 @@ const loadDoctors = (json) => ({
 });
 
 const getDoctors = () => (dispatch) => {
-  fetch('api/v1/doctors')
+  fetch('http://localhost:3000/api/v1/doctors')
     .then((response) => response.json())
     .then((json) => dispatch(loadDoctors(json)));
 };
@@ -20,13 +20,15 @@ const doctorReducer = (state = [], action) => {
           name,
           email,
           phone,
+          about,
           image,
         } = doctor;
         return {
           id,
           name,
-          phone,
           email,
+          phone,
+          about,
           image,
         };
       });

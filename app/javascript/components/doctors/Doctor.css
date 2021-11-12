@@ -1,6 +1,7 @@
 .contain {
   width: 96%;
-  margin-left: 2%;
+  margin-left: 15%;
+  margin-top: 10%;
 }
 
 .outter_container {
@@ -99,6 +100,22 @@ nav {
 
 }
 
+.display_doctor {
+ font-size: 10px;
+}
+
+.display_doctor_navbar {
+  margin-right: 15%;
+}
+
+.side_add_doctor {
+  margin-right: 5px;
+}
+
+.add_doctor_form {
+  width: 40%;
+}
+
 @media screen and (min-width: 768px) {
   .row {
     width: 32vw;
@@ -142,6 +159,18 @@ nav {
   top: 20px;
   left: -26px;
 }
+
+.display_doctor {
+  font-size: 15px;
+ }
+
+ .display_doctor_navbar {
+  margin-right: 180px;
+}
+
+.add_doctor_form {
+  width: 80%;
+}
 }
 @media screen and (min-width: 1024px) {
   .leading {
@@ -181,6 +210,15 @@ nav {
     margin-left: 112px;
     top: -23px;
   }
+
+  .display_doctor {
+    font-size: 19px;
+   }
+
+   .display_doctor_navbar {
+    margin-right: 280px;
+  }
+   
 }
 
 @media screen and (min-width: 1200px) {

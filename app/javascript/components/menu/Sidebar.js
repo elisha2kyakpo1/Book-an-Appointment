@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const SideBar = () => (
-  <ul>
+  <ul className="side-menu">
     <li>
       <Link className="link" to="/">
         Home

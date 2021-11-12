@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import { getDoctors } from '../redux/Doctors';
 import { getAppointments, getClientAppointments } from '../redux/Appointments';
-import Sidebar from '../menu/Sidebar';
 import './Doctor.css';
 
 const Doctors = () => {
@@ -41,7 +40,6 @@ const Doctors = () => {
     <>
       <div className="outter_container doctors">
         <div className="left_side_bar">
-          <Sidebar />
         </div>
         <div className="contain">
           <div className="leading">
