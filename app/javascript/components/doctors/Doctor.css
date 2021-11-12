@@ -1,6 +1,5 @@
 .contain {
   width: 96%;
-  border: solid 30px #f1f1f1;
   margin-left: 2%;
 }
 
@@ -68,10 +67,6 @@
   width: 148px;
 }
 
-.doctors {
-  position: relative;
-}
-
 .vl {
   border-left: 1px solid #f1f1f1;
   position: absolute;
@@ -102,10 +97,6 @@ nav {
   top: 92px;
   margin-left: 40px;
 
-}
-
-.btn--large {
- 
 }
 
 @media screen and (min-width: 768px) {
@@ -214,7 +205,8 @@ nav {
 
   .left_side_bar {
     position: absolute;
-    left: 70px;
+    top: 0;
+    left: 0;
   }
 
   .contain {
