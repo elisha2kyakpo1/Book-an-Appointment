@@ -2,13 +2,13 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { store } from './redux/ConfigureStore';
 import Doctors from './doctors/Doctors';
 import DoctorDetails from './doctors/DoctorDetails';
-import AddDoctor from './doctors/AddDoctor';
+import AddDoctor from './doctors/add-doc/AddDoctor';
 import Appointment from './clients/Appointment';
 import DoctorAppointment from './clients/Doctorappointment';
+import './App.css';
 
 import Profile from './doctors/Profile';
 import SideBar from './menu/Sidebar';

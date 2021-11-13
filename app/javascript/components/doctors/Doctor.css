@@ -112,14 +112,6 @@ nav {
   margin-right: 15%;
 }
 
-.side_add_doctor {
-  margin-right: 5px;
-}
-
-.add_doctor_form {
-  width: 40%;
-}
-
 @media screen and (min-width: 768px) {
   .row {
     width: 32vw;
@@ -158,23 +150,23 @@ nav {
     font-size: 19px;
   }
  
-.outter_container {
-  width: 95vw;
-  top: 20px;
-  left: -26px;
-}
+  .outter_container {
+    width: 95vw;
+    top: 20px;
+    left: -26px;
+  }
 
-.display_doctor {
-  font-size: 15px;
- }
+  .display_doctor {
+    font-size: 15px;
+  }
 
- .display_doctor_navbar {
-  margin-right: 180px;
-}
+  .display_doctor_navbar {
+    margin-right: 180px;
+  }
 
-.add_doctor_form {
-  width: 80%;
-}
+  .add_doctor_form {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .leading {

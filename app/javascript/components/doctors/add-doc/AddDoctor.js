@@ -4,6 +4,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './AddDoctor.css';
 
 const AddDoctor = () => {
   const doctors = useSelector((state) => state.doctorReducer);
@@ -69,8 +70,8 @@ const AddDoctor = () => {
 
     <>
 
-      <div className="outter_container">
-        <div className="contain">
+      <div className="add-doctor d-flex">
+        <div className="inner-div">
           <div className="side_add_doctor">
             <h4>Add a doctor</h4>
           </div>

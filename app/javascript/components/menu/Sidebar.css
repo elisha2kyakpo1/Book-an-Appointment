@@ -23,3 +23,9 @@
   background-color:#84cc16;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .side-menu {
+    display: none;
+  }
+}
