@@ -38,8 +38,8 @@ const Doctors = () => {
 
   return (
     <>
-      <div className="outter_container doctors">
-        <div className="left_side_bar">
+      <div className="">
+        <div className="">
         </div>
         <div className="contain">
           <div className="leading">
@@ -51,8 +51,8 @@ const Doctors = () => {
                   alt="First slide"
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h3 className="text-carousel">First slide label</h3>
+                  <p className="text-carousel">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -63,8 +63,8 @@ const Doctors = () => {
                 />
 
                 <Carousel.Caption>
-                  <h3>Second slide label</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <h3 className="text-carousel">Second slide label</h3>
+                  <p className="text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -75,8 +75,8 @@ const Doctors = () => {
                 />
 
                 <Carousel.Caption>
-                  <h3>Third slide label</h3>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h3 className="text-carousel">Third slide label</h3>
+                  <p className="text-carousel">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
@@ -85,6 +85,7 @@ const Doctors = () => {
             <div className="row">
               {doctors.map((doctor) => (
                 <div className="col-12 col-md-6 col-lg-4">
+                  <h2>I'm a doctor</h2>
                   <div className="doctor">
                     <div className="circle">
                       <img src={doctor.image} alt="doctors" />

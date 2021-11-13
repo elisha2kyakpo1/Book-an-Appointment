@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
 
+body {
+  height: 100vh;
+}
+
 $primary-color-dark: #e2e8f0;
 $primary-color: #f1f5f9;
 $primary-color-light: #64748b;
@@ -48,7 +52,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 48px;
+  padding: 16px 48px 16px 20px;
   background-color: $primary-color-dark;
   color: $primary-color-light;
 

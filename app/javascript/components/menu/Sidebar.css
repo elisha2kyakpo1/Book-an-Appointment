@@ -1,5 +1,5 @@
 .side-menu {
-  position: absolute;
+  position: fixed;
   top: 55px;
   height: 100vh;
   left: 0;
@@ -7,18 +7,19 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  border-right: 1px solid #e7e5e4;
 }
 
 .link {
   display: block;
   color: #000;
   padding: 8px 16px;
+  font-weight: 800;
   text-decoration: none;
 }
 
 /* Change the link color on hover */
 .link:hover {
-  background-color: #555;
+  background-color:#84cc16;
   color: white;
 }

@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { store } from './redux/ConfigureStore';
 import Doctors from './doctors/Doctors';
 import DoctorDetails from './doctors/DoctorDetails';

@@ -10,6 +10,10 @@
   left: -26px;
 }
 
+.text-carousel {
+  color: lightslategray;
+}
+
 .please {
   margin-left: 10px;
   font-size: 15px;
