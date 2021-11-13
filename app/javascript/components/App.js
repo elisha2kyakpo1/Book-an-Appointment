@@ -9,15 +9,16 @@ import AddDoctor from './doctors/add-doc/AddDoctor';
 import Appointment from './clients/Appointment';
 import DoctorAppointment from './clients/Doctorappointment';
 import './App.css';
-
 import Profile from './doctors/Profile';
 import SideBar from './menu/Sidebar';
+import MobileSideBar from './menu/MobileSideBar';
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
         <div className="page-container">
+        <MobileSideBar />
         <SideBar />
           <Switch>
             <Route exact path="/" component={Doctors} />
