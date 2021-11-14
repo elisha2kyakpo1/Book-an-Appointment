@@ -58,6 +58,7 @@ const AddDoctor = () => {
       form.append('about', document.getElementById('about').value);
       fetch('http://localhost:3000/api/v1/doctors', {
         method: 'POST',
+        'Content-Type': 'application/json',
         body: form,
       });
       localStorage.setItem('addDoctor', true);

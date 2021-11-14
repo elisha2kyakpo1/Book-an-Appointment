@@ -28,19 +28,34 @@
 .circle {
   background-color: #d4ece9;
   border-radius: 50%;
-  width: 80px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   position: relative;
+}
+
+.leading {
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .circle img {
   width: 100%;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
 }
 
-.name {
-  margin-left: 25px;
-  margin-top: 13px;
-  font-size: 15px;
+.carousel-wrapper,
+.controls-wrapper {
+  width: 100%;
+}
+
+.doc-info {
+  margin-top: 20px;
+}
+
+.paragraph {
+  opacity: 0.5;
 }
 
 .hero-container {
@@ -84,11 +99,6 @@
   margin-left: -3%;
 }
 
-.row {
-  width: 100px;
-  margin-left: 150px;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -104,6 +114,10 @@ nav {
 
 }
 
+.image-div {
+  margin: 0 20px
+}
+
 .display_doctor {
  font-size: 10px;
 }
@@ -112,13 +126,14 @@ nav {
   margin-right: 15%;
 }
 
-@media screen and (min-width: 768px) {
-  .row {
-    width: 32vw;
-    margin-left: 30vw;
-    margin-top: 5px;
-  }
+.row-div {
+  margin-top: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+@media screen and (min-width: 768px) {
   .please {
     margin-left: 50px;
     font-size: 25px;
@@ -168,6 +183,7 @@ nav {
     width: 80%;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .leading {
     width: 30vw;
@@ -218,11 +234,6 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
-  .row {
-    width: 20vw;
-    margin-left: 20vw;
-  }
-
   .leading {
     margin-left: 25vw;
     margin-bottom: 100px;

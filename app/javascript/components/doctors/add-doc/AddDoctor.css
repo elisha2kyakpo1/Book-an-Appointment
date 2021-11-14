@@ -8,6 +8,10 @@
   margin-right: 5px;
 }
 
+.inner-div {
+  width: 60%;
+}
+
 .btn,
 .form-group {
   margin-top: 10px;

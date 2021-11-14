@@ -2,7 +2,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Carousel } from 'react-bootstrap';
+import Carousel from "react-elastic-carousel";
 import { getDoctors } from '../redux/Doctors';
 import { getAppointments, getClientAppointments } from '../redux/Appointments';
 import './Doctor.css';
@@ -36,66 +36,44 @@ const Doctors = () => {
     }
   }, []);
 
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
   return (
     <>
       <div className="">
         <div className="">
         </div>
-        <div className="contain">
-          <div className="leading">
-            <Carousel>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="holder.js/800x400?text=First slide&bg=373940"
-                  alt="First slide"
-                />
-                <Carousel.Caption>
-                  <h3 className="text-carousel">First slide label</h3>
-                  <p className="text-carousel">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="holder.js/800x400?text=Second slide&bg=282c34"
-                  alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                  <h3 className="text-carousel">Second slide label</h3>
-                  <p className="text-carousel">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="holder.js/800x400?text=Third slide&bg=20232a"
-                  alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                  <h3 className="text-carousel">Third slide label</h3>
-                  <p className="text-carousel">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
+        <div className="contain-doctor">
+          <div className="leading d-flex">
+            <div>
+              <h2 className="">LEADING DOCTORS</h2>
+              <p className="paragraph">please select a doctor</p>
+            </div>
           </div>
-          <div className="container">
-            <div className="row">
-              {doctors.map((doctor) => (
-                <div className="col-12 col-md-6 col-lg-4">
-                  <h2>I'm a doctor</h2>
-                  <div className="doctor">
-                    <div className="circle">
-                      <img src={doctor.image} alt="doctors" />
+          <div className="main controls-wrapper">
+            <div className="row-div carousel-wrapper d-flex">
+              <Carousel breakPoints={breakPoints}>
+                {doctors.map((doctor) => (
+                  <div key={doctor.id} className="image-div">
+                    <div className="doctor">
+                      <div className="circle">
+                        <img src={doctor.image} alt="doctors" />
+                      </div>
+                      <div className="doc-info">
+                        <h4 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h4>
+                        <p className="paragraph"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.about}</Link></p>
+                      </div>
                     </div>
-                    <h2 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h2>
                   </div>
-                </div>
 
-              ))}
-
+                ))}
+              </Carousel>
             </div>
 
           </div>
