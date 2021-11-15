@@ -11,24 +11,24 @@ import DoctorAppointment from './clients/Doctorappointment';
 import './App.css';
 import Profile from './doctors/Profile';
 import SideBar from './menu/Sidebar';
-import MobileSideBar from './menu/MobileSideBar';
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
         <div className="page-container">
-        <MobileSideBar />
-        <SideBar />
-          <Switch>
-            <Route exact path="/" component={Doctors} />
-            <Route path="/DetailsPage/:id" component={DoctorDetails} />
-            <Route path="/doctor/appointment" component={DoctorAppointment} />
-            <Route path="/addDoctor" component={AddDoctor} />
-            <Route path="/appointments" component={Appointment} />
-            <Route path="/profile" component={Profile} />
+          <SideBar />
+          <div className="display-doc">
+            <Switch>
+              <Route exact path="/" component={Doctors} />
+              <Route path="/DetailsPage/:id" component={DoctorDetails} />
+              <Route path="/doctor/appointment" component={DoctorAppointment} />
+              <Route path="/addDoctor" component={AddDoctor} />
+              <Route path="/appointments" component={Appointment} />
+              <Route path="/profile" component={Profile} />
 
-          </Switch>
+            </Switch>
+          </div>
         </div>
       </Router>
     </Provider>

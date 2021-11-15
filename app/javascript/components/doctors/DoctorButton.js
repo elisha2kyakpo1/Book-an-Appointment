@@ -4,7 +4,7 @@ import React from 'react';
 
 const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--medium', 'btn--small'];
 
 const DoctorButton = ({
   children, type, onClick, buttonStyle, buttonSize,

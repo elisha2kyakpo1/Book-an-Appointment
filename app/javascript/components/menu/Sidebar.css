@@ -1,8 +1,5 @@
 .side-menu {
-  position: fixed;
-  top: 55px;
   height: 100vh;
-  left: 0;
   z-index: 5;
   list-style-type: none;
   margin: 0;

@@ -1,13 +1,11 @@
-.contain {
-  width: 96%;
-  margin-left: 15%;
-  margin-top: 10%;
+.details {
+  display: flex;
+  justify-content: space-between;
 }
 
-.outter_container {
-  width: 95vw;
-  top: 549px;
-  left: -26px;
+.jRFJkP,
+.cNNJIt:hover {
+  background-color: #84cc16;
 }
 
 .text-carousel {
@@ -26,11 +24,22 @@
 }
 
 .circle {
-  background-color: #d4ece9;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   position: relative;
+}
+
+.circle-details {
+  width: 60%;
+  height: 60%;
+  position: relative;
+}
+
+.circle-details img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .leading {
@@ -99,13 +108,6 @@
   margin-left: -3%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-
 .nav-menu {
   position: absolute;
   width: 100px;
@@ -119,11 +121,15 @@ nav {
 }
 
 .display_doctor {
+  margin-left: 6%;
+  margin-right: 2%;
  font-size: 10px;
+ display: flex;
+ flex-direction: column;
 }
 
-.display_doctor_navbar {
-  margin-right: 15%;
+.display_doctor .btn {
+  margin-left: auto;
 }
 
 .row-div {
@@ -164,19 +170,9 @@ nav {
   .span1 {
     font-size: 19px;
   }
- 
-  .outter_container {
-    width: 95vw;
-    top: 20px;
-    left: -26px;
-  }
 
   .display_doctor {
     font-size: 15px;
-  }
-
-  .display_doctor_navbar {
-    margin-right: 180px;
   }
 
   .add_doctor_form {
@@ -225,10 +221,6 @@ nav {
 
   .display_doctor {
     font-size: 19px;
-   }
-
-   .display_doctor_navbar {
-    margin-right: 280px;
   }
    
 }
@@ -240,22 +232,10 @@ nav {
     padding-top: 60px;
   }
 
-  .circle img {
-    position: absolute;
-    width: 85%;
-    height: 65%;
-    top: 23px;
-    left: 5px;
-  }
-
   .left_side_bar {
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  .contain {
-    width: 70%;
   }
 
   .nav-menu {
@@ -263,12 +243,5 @@ nav {
     margin-left: 44px;
     top: -14px;
     height: 300px;
-  }
-
-  .outter_container {
-    width: 95vw;
-    top: 106px;
-    left: -26px;
-    max-height: 120vh;
   }
 }
