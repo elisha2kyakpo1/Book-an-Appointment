@@ -54,7 +54,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 16px 48px 16px 20px;
-  background-color: $primary-color-dark;
   color: $primary-color-light;
 
   a {
@@ -488,10 +487,6 @@ video {
   .btn-mobile {
     display: block;
     text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
   }
 }
 

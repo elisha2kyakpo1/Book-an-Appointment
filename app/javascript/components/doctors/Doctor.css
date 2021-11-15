@@ -3,9 +3,9 @@
   justify-content: space-between;
 }
 
-.jRFJkP,
+.jRFJkP:hover,
 .cNNJIt:hover {
-  background-color: #84cc16;
+  background-color: #84cc16 !important;
 }
 
 .text-carousel {
