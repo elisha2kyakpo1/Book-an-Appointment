@@ -29,7 +29,7 @@ const SideBar = () => (
           <FaInstagram />
           <FaPinterest />
         </div>
-        <small>&copy; 2021 book a doctor</small>
+        <small>&copy;2021 book a doctor</small>
         </div>
     </div>
   </ul>

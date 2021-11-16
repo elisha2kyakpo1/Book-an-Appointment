@@ -22,6 +22,10 @@
   justify-content: space-evenly;
 }
 
+.icons * {
+  cursor: pointer;
+}
+
 .social {
   align-items: center;
   position: absolute;
