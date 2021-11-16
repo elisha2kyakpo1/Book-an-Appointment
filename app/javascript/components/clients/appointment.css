@@ -3,11 +3,6 @@
   margin-left: 12px;
 }
 
-<<<<<<< HEAD
-.appointment_row {
-  margin-left: 1px;
-  width: 85%;
-=======
 .my-appointment {
   box-shadow:
     0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
@@ -17,27 +12,11 @@
   padding: 15px;
   border-radius: 8px;
   width: 80%;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 }
 
 .appointment {
   font-size: 10px;
   margin-bottom: 9px;
-<<<<<<< HEAD
-}
-
-@media screen and (min-width: 767px) {
-  .mobile_container {
-    margin-top: 50px;
-  }
-
-  .appointment_row {
-    margin-left: 80px;
-  }
-
-  .appointment {
-    width: 140px;
-=======
   box-shadow:
     0 0.46875rem 2.1875rem rgb(4 9 20 / 3.5%),
     0 0.9375rem 1.40625rem rgb(4 9 20 / 5%),
@@ -55,7 +34,6 @@
 
 @media screen and (min-width: 767px) {
   .appointment {
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
     font-size: 17px;
   }
 

@@ -26,26 +26,6 @@ function Appointment() {
   return (
     <div className="outter_container">
       <div className="contain mobile_container d-flex">
-<<<<<<< HEAD
-        <div className="mobile_sidebar">
-        </div>
-        <div>
-          <h1 className="appointment_header text-center">My appointments</h1>
-          <div className="row appointment_row">
-            {clientAppointments.map((appointment) => (
-              <div className="col-12 col-md-6 col-lg-4">
-                <div className="appointment">
-                  <div>
-                    Date&nbsp;&nbsp;
-                    {appointment.appointment_date}
-                  </div>
-                  <div>
-                    Time&nbsp;&nbsp;
-                    {appointment.appointment_time}
-                  </div>
-                  <div>
-                    Doctor-&nbsp;&nbsp;
-=======
         <div className ="my-appointment">
           <h1 className="appointment_header text-center">My appointments</h1>
           <div className="row appointment_row">
@@ -62,7 +42,6 @@ function Appointment() {
                   </div>
                   <div>
                     Doctor:&nbsp;&nbsp;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
                     {storedDoctors.filter((doctor) => doctor.id === appointment.doctor_id).map((doctor) => (
                       doctor.name
                     ))}

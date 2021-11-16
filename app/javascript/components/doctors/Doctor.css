@@ -32,29 +32,17 @@
 
 .circle-details {
   width: 60%;
-<<<<<<< HEAD
-  height: 60%;
-=======
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   position: relative;
 }
 
 .circle-details img {
   width: 100%;
-<<<<<<< HEAD
-  height: 60%;
-=======
   height: 350px;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   object-fit: cover;
 }
 
 .leading {
   justify-content: center;
-<<<<<<< HEAD
-  margin-top: 5%;
-=======
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 }
 
 .circle img {
@@ -122,33 +110,21 @@
 }
 
 .image-div {
-<<<<<<< HEAD
-  margin: 0 20px
-=======
   margin: 0 20px;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 }
 
 .display_doctor {
   margin-left: 6%;
   margin-right: 2%;
-<<<<<<< HEAD
- font-size: 10px;
- display: flex;
- flex-direction: column;
-=======
   font-size: 10px;
   display: flex;
   flex-direction: column;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 }
 
 .display_doctor .btn {
   margin-left: auto;
 }
 
-<<<<<<< HEAD
-=======
 .doc-data p {
   margin-bottom: 0;
   opacity: 0.5;
@@ -163,7 +139,6 @@
   background-color: #f3f4f6;
 }
 
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 .row-div {
   margin-top: 5px;
   flex-wrap: wrap;
@@ -171,8 +146,6 @@
   align-items: center;
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 768px) {
   .details {
     flex-direction: column;
@@ -188,7 +161,6 @@
   }
 }
 
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 @media screen and (min-width: 768px) {
   .please {
     margin-left: 50px;
@@ -211,15 +183,12 @@
     width: 183px;
   }
 
-<<<<<<< HEAD
-=======
   .name {
     text-align: center;
     border-bottom: 2px dotted;
     padding-bottom: 10px;
   }
 
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   .nav-menu {
     width: 5vw;
     top: 130px;
@@ -282,12 +251,7 @@
 @media screen and (min-width: 1200px) {
   .leading {
     margin-left: 25vw;
-<<<<<<< HEAD
-    margin-bottom: 100px;
-    padding-top: 60px;
-=======
     margin-bottom: 30px;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   }
 
   .left_side_bar {

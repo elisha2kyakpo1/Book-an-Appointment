@@ -1,15 +1,5 @@
 /* Popup style */
 .popup-box {
-<<<<<<< HEAD
-    position: fixed;
-    background: #00000050;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-   
-=======
   position: fixed;
   background: #00000050;
   width: 100%;
@@ -24,7 +14,6 @@
   right: 0;
 }
 
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 .box {
   position: relative;
   width: 70%;
@@ -38,16 +27,6 @@
   border: 1px solid #999;
   overflow: auto;
 }
-<<<<<<< HEAD
-  
-.close-icon {
-  content: 'x';
-  cursor: pointer;
-  position: fixed;
-  right: calc(15% - 30px);
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-=======
 
 .submit-appointment-div {
   margin-top: 2%;
@@ -70,7 +49,6 @@
   cursor: pointer;
   font-size: 2rem;
   font-weight: 800;
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   width: 25px;
   height: 25px;
   border-radius: 50%;

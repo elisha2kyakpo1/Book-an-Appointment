@@ -1,8 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-=======
 import {FaFacebook, FaGoogle, FaInstagram, FaPinterest, FaTwitter} from 'react-icons/fa'
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
@@ -20,17 +17,6 @@ const SideBar = () => (
     </li>
     <li>
       <Link className="link" to="/appointments">
-<<<<<<< HEAD
-        Appointment
-      </Link>
-    </li>
-    <li>
-      <Link className="link" to="/profile">
-        Profile
-      </Link>
-    </li>
-  </ul>
-=======
         My appointments
       </Link>
     </li>
@@ -48,7 +34,6 @@ const SideBar = () => (
     </div>
   </ul>
   
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 );
 
 export default SideBar;

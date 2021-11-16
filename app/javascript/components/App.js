@@ -9,10 +9,6 @@ import AddDoctor from './doctors/add-doc/AddDoctor';
 import Appointment from './clients/Appointment';
 import DoctorAppointment from './clients/Doctorappointment';
 import './App.css';
-<<<<<<< HEAD
-import Profile from './doctors/Profile';
-=======
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 import SideBar from './menu/Sidebar';
 
 function App() {
@@ -28,11 +24,6 @@ function App() {
               <Route path="/doctor/appointment" component={DoctorAppointment} />
               <Route path="/addDoctor" component={AddDoctor} />
               <Route path="/appointments" component={Appointment} />
-<<<<<<< HEAD
-              <Route path="/profile" component={Profile} />
-
-=======
->>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
             </Switch>
           </div>
         </div>
