@@ -10,9 +10,6 @@ RSpec.describe Client, :type => :model do
   }
 
   describe "Validations" do
-    # it "is valid with valid attributes" do
-    #   expect(subject).to be_valid
-    # end
 
     it "is not valid without a encrypted_password" do
       subject.encrypted_password = nil
