@@ -236,6 +236,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    shoulda-matchers (5.0.0)
+      activesupport (>= 5.2.0)
     spring (3.0.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -299,6 +301,7 @@ DEPENDENCIES
   rspec-rails (>= 3.9.0)
   sass-rails (>= 6)
   selenium-webdriver
+  shoulda-matchers
   spring
   turbolinks (~> 5)
   tzinfo-data

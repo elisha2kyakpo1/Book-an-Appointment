@@ -9,7 +9,7 @@ RSpec.describe Doctor, :type => :model do
          image: "my image"
         ) 
         }
-
+     describe "Validations" do
        it "is valid with valid attributes" do
         expect(subject).to be_valid
        end
@@ -42,4 +42,9 @@ RSpec.describe Doctor, :type => :model do
         subject.image = nil
         expect(subject).to_not be_valid
        end
+      end
+
+      describe "Associations" do
+            it { should have_many(:appointments) }
+      end
 end
