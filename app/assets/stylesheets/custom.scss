@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
 
+body {
+  height: 100vh;
+}
+
 $primary-color-dark: #e2e8f0;
 $primary-color: #f1f5f9;
 $primary-color-light: #64748b;
@@ -28,6 +32,7 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 h1,
@@ -48,8 +53,7 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 48px;
-  background-color: $primary-color-dark;
+  padding: 16px 48px 16px 20px;
   color: $primary-color-light;
 
   a {
@@ -483,10 +487,6 @@ video {
   .btn-mobile {
     display: block;
     text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
   }
 }
 

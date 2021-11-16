@@ -2,9 +2,9 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from "react-elastic-carousel";
 import { getDoctors } from '../redux/Doctors';
 import { getAppointments, getClientAppointments } from '../redux/Appointments';
-import Sidebar from '../menu/Sidebar';
 import './Doctor.css';
 
 const Doctors = () => {
@@ -36,31 +36,44 @@ const Doctors = () => {
     }
   }, []);
 
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 }
+  ];
+
   return (
     <>
-      <div className="outter_container doctors">
-        <div className="left_side_bar">
-          <Sidebar />
+      <div className="">
+        <div className="">
         </div>
-        <div className="contain">
-          <div className="leading">
-            <h1 className="please">LEADING DOCTORS</h1>
-            <h2 className="select">please select a doctor</h2>
+        <div className="contain-doctor">
+          <div className="leading d-flex">
+            <div>
+              <h2 className="">LEADING DOCTORS</h2>
+              <p className="paragraph">please select a doctor</p>
+            </div>
           </div>
-          <div className="container">
-            <div className="row">
-              {doctors.map((doctor) => (
-                <div className="col-12 col-md-6 col-lg-4">
-                  <div className="doctor">
-                    <div className="circle">
-                      <img src={doctor.image} alt="doctors" />
+          <div className="main controls-wrapper">
+            <div className="row-div carousel-wrapper d-flex">
+              <Carousel breakPoints={breakPoints}>
+                {doctors.map((doctor) => (
+                  <div key={doctor.id} className="image-div">
+                    <div className="doctor">
+                      <div className="circle">
+                        <img src={doctor.image} alt="doctors" />
+                      </div>
+                      <div className="doc-info">
+                        <h4 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h4>
+                        <p className="paragraph"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.about}</Link></p>
+                      </div>
                     </div>
-                    <h2 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h2>
                   </div>
-                </div>
 
-              ))}
-
+                ))}
+              </Carousel>
             </div>
 
           </div>

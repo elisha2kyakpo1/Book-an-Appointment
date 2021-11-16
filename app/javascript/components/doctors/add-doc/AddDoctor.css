@@ -1,0 +1,28 @@
+.add-doctor {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.side_add_doctor {
+  margin-right: 5px;
+}
+
+.inner-div {
+  width: 60%;
+}
+
+.btn,
+.form-group {
+  margin-top: 10px;
+}
+
+.add_doctor_form {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .add-doctor {
+    display: none;
+  }
+}

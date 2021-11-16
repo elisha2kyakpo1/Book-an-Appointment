@@ -3,7 +3,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getClientAppointments } from '../redux/Appointments';
-import Sidebar from '../menu/Sidebar';
 import './appointment.css';
 
 function Appointment() {
@@ -28,7 +27,6 @@ function Appointment() {
     <div className="outter_container">
       <div className="contain mobile_container d-flex">
         <div className="mobile_sidebar">
-          <Sidebar />
         </div>
         <div>
           <h1 className="appointment_header text-center">My appointments</h1>
