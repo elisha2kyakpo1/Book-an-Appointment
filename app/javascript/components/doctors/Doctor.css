@@ -135,6 +135,10 @@
   opacity: 0.5;
 }
 
+.doc-data h4 {
+  text-align: center;
+}
+
 .amount {
   padding: 3px 5px;
   background-color: #f3f4f6;

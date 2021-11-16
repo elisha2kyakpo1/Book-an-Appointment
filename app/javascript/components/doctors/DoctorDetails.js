@@ -18,13 +18,6 @@ function DoctorDetails() {
     setIsOpen(!isOpen);
   };
 
-  if (!localStorage.getItem('stored_doctors') || doctors.length > localStorage.getItem('current_number_of_doctors')) {
-    localStorage.setItem('stored_doctors', JSON.stringify(doctors));
-  }
-
-  const storedDoctors = JSON.parse(localStorage.getItem('stored_doctors'));
-  localStorage.setItem('current_number_of_doctors', storedDoctors.length);
-
   return (
     <div className="outter_container">
       <div className="contain">
@@ -33,7 +26,7 @@ function DoctorDetails() {
         <div className="doctor display_doctor">
       
           <div>
-            {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
+            {doctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
               <div key={doctor.id} className="details">
                 <div className="circle-details">
                   <img
@@ -43,7 +36,7 @@ function DoctorDetails() {
                 </div>
                 <div className="doc-data">
                   <h4>{doctor.name}</h4>
-                  <h5 className="amount">from as low as $120 per month</h5>
+                  <h6 className="amount">from as low as $120 per month</h6>
                   <p>{doctor.email}</p>
                   <p>{doctor.about}</p>
                 </div>
@@ -67,7 +60,7 @@ function DoctorDetails() {
             buttonSize="btn--small"
             onClick={togglePopup}
           >
-            Book AN Appointment
+            Book an appointment
 
           </DoctorButton>
         </div>
