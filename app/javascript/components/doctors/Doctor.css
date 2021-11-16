@@ -46,10 +46,6 @@
   position: relative;
 }
 
-.nav-menu {
-  position: absolute;
-}
-
 .span1 {
   font-size: 12px;
 }
@@ -101,11 +97,10 @@ nav {
   width: 100px;
   top: 92px;
   margin-left: 40px;
-
 }
 
 .display_doctor {
- font-size: 10px;
+  font-size: 10px;
 }
 
 .display_doctor_navbar {
@@ -157,25 +152,26 @@ nav {
   .span1 {
     font-size: 19px;
   }
- 
-.outter_container {
-  width: 95vw;
-  top: 20px;
-  left: -26px;
+
+  .outter_container {
+    width: 95vw;
+    top: 20px;
+    left: -26px;
+  }
+
+  .display_doctor {
+    font-size: 15px;
+  }
+
+  .display_doctor_navbar {
+    margin-right: 180px;
+  }
+
+  .add_doctor_form {
+    width: 80%;
+  }
 }
 
-.display_doctor {
-  font-size: 15px;
- }
-
- .display_doctor_navbar {
-  margin-right: 180px;
-}
-
-.add_doctor_form {
-  width: 80%;
-}
-}
 @media screen and (min-width: 1024px) {
   .leading {
     width: 30vw;
@@ -201,28 +197,23 @@ nav {
   }
 
   .nav-menu {
-    margin-left: -1px;
     margin-top: 150px;
+    width: 251px;
+    margin-left: 112px;
+    top: -23px;
   }
 
   .span1 {
     font-size: 27px;
   }
 
-  .nav-menu {
-    width: 251px;
-    margin-left: 112px;
-    top: -23px;
-  }
-
   .display_doctor {
     font-size: 19px;
-   }
+  }
 
-   .display_doctor_navbar {
+  .display_doctor_navbar {
     margin-right: 280px;
   }
-   
 }
 
 @media screen and (min-width: 1200px) {

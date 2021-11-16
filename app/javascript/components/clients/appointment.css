@@ -1,37 +1,34 @@
 .appointment_header {
-    font-size: 18px;
-    margin-left: 12px;
+  font-size: 18px;
+  margin-left: 12px;
 }
 
-
-.appointment_row{
-    margin-left: 1px;
-    width: 85%;
+.appointment_row {
+  margin-left: 1px;
+  width: 85%;
 }
 
 .appointment {
-    font-size: 10px;
-    margin-bottom: 9px;
+  font-size: 10px;
+  margin-bottom: 9px;
 }
 
 @media screen and (min-width: 767px) {
-.mobile_container {
+  .mobile_container {
     margin-top: 50px;
-}
+  }
 
-.appointment_row{
+  .appointment_row {
     margin-left: 80px;
-}
+  }
 
-.appointment {
+  .appointment {
     width: 140px;
     font-size: 17px;
-}
+  }
 
-.appointment_header {
+  .appointment_header {
     font-size: 30px;
     margin-left: 1px;
-}
-
-
+  }
 }
