@@ -35,6 +35,7 @@ const SideBar = () => {
           Profile
         </Link>
       </li>
+      <i class="fa fa-bars"></i>
     </ul>
   </div>
 );
