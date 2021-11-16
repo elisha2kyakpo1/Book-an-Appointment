@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Carousel from "react-elastic-carousel";
+import {FaFacebook, FaGoogle, FaTwitter} from 'react-icons/fa'
 import { getDoctors } from '../redux/Doctors';
 import { getAppointments, getClientAppointments } from '../redux/Appointments';
 import './Doctor.css';
@@ -68,6 +69,17 @@ const Doctors = () => {
                       <div className="doc-info">
                         <h4 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h4>
                         <p className="paragraph"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.about}</Link></p>
+                      </div>
+                      <div>
+                      <div className="social-doc">
+                        <div>
+                          <div className="icons">
+                            <FaTwitter />
+                            <FaFacebook />
+                            <FaGoogle />
+                          </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

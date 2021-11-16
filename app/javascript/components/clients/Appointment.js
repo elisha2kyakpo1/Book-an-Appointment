@@ -33,15 +33,15 @@ function Appointment() {
               <div key={appointment.appointment_time} className="col-12 col-md-6 col-lg-4">
                 <div className="appointment">
                   <div>
-                    Date&nbsp;&nbsp;
+                    Date:&nbsp;&nbsp;
                     {appointment.appointment_date_and_time.substring(0, 10)}
                   </div>
                   <div>
-                    Time&nbsp;&nbsp;
+                    Time:&nbsp;&nbsp;
                     {appointment.appointment_time}
                   </div>
                   <div>
-                    Doctor:
+                    Doctor:&nbsp;&nbsp;
                     {storedDoctors.filter((doctor) => doctor.id === appointment.doctor_id).map((doctor) => (
                       doctor.name
                     ))}

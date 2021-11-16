@@ -188,6 +188,12 @@
     width: 183px;
   }
 
+  .name {
+    text-align: center;
+    border-bottom: 2px dotted;
+    padding-bottom: 10px;
+  }
+
   .nav-menu {
     width: 5vw;
     top: 130px;
