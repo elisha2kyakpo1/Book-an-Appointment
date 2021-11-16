@@ -1,14 +1,11 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-empty */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import DoctorAppointment from '../clients/Doctorappointment';
 import DoctorButton from './DoctorButton';
-import Sidebar from '../menu/Sidebar';
 import './Doctor.css';
 
 function DoctorDetails() {
@@ -30,49 +27,29 @@ function DoctorDetails() {
 
   return (
     <div className="outter_container">
-      <div className="contain d-flex">
+      <div className="contain">
         <div className="display_doctor_navbar">
-          <Sidebar />
         </div>
         <div className="doctor display_doctor">
-          <div className="circle">
-            <img
-              src={storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-                doctor.image
-              ))}
-              alt="doctor"
-            />
-          </div>
+      
           <div>
             {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-              <div>{doctor.name}</div>
+              <div className="details">
+                <div className="circle-details">
+                  <img
+                    src={doctor.image}
+                    alt="doctor"
+                  />
+                </div>
+                <div>
+                  <div>{doctor.name}</div>
+                  <div>{doctor.email}</div>
+                  <div>{doctor.about}</div>
+                </div>
+             </div>
             ))}
           </div>
-          <div>
-            {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-              <div>
-                Email:
-                {' '}
-                {doctor.email}
-              </div>
-            ))}
-          </div>
-          <div>
-            {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-              <div>
-                Phone Number:
-                {doctor.phone}
-              </div>
-            ))}
-          </div>
-          <div>
-            {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-              <div>
-                About:
-                {doctor.about}
-              </div>
-            ))}
-          </div>
+     
           {isOpen && (
           <DoctorAppointment
             content={(
@@ -86,7 +63,7 @@ function DoctorDetails() {
           <DoctorButton
             className="btns"
             buttonStyle="btn--outline"
-            buttonSize="btn--large"
+            buttonSize="btn--small"
             onClick={togglePopup}
           >
             Book AN Appointment

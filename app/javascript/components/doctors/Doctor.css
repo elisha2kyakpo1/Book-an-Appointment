@@ -1,13 +1,15 @@
-.contain {
-  width: 96%;
-  border: solid 30px #f1f1f1;
-  margin-left: 2%;
+.details {
+  display: flex;
+  justify-content: space-between;
 }
 
-.outter_container {
-  width: 95vw;
-  top: 549px;
-  left: -26px;
+.jRFJkP:hover,
+.cNNJIt:hover {
+  background-color: #84cc16 !important;
+}
+
+.text-carousel {
+  color: lightslategray;
 }
 
 .please {
@@ -22,21 +24,47 @@
 }
 
 .circle {
-  background-color: #d4ece9;
   border-radius: 50%;
-  width: 80px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   position: relative;
+}
+
+.circle-details {
+  width: 60%;
+  height: 60%;
+  position: relative;
+}
+
+.circle-details img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.leading {
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .circle img {
   width: 100%;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
 }
 
-.name {
-  margin-left: 25px;
-  margin-top: 13px;
-  font-size: 15px;
+.carousel-wrapper,
+.controls-wrapper {
+  width: 100%;
+}
+
+.doc-info {
+  margin-top: 20px;
+}
+
+.paragraph {
+  opacity: 0.5;
 }
 
 .hero-container {
@@ -68,10 +96,6 @@
   width: 148px;
 }
 
-.doctors {
-  position: relative;
-}
-
 .vl {
   border-left: 1px solid #f1f1f1;
   position: absolute;
@@ -84,18 +108,6 @@
   margin-left: -3%;
 }
 
-.row {
-  width: 100px;
-  margin-left: 150px;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-}
-
 .nav-menu {
   position: absolute;
   width: 100px;
@@ -104,29 +116,30 @@ nav {
 
 }
 
+.image-div {
+  margin: 0 20px
+}
+
 .display_doctor {
+  margin-left: 6%;
+  margin-right: 2%;
  font-size: 10px;
+ display: flex;
+ flex-direction: column;
 }
 
-.display_doctor_navbar {
-  margin-right: 15%;
+.display_doctor .btn {
+  margin-left: auto;
 }
 
-.side_add_doctor {
-  margin-right: 5px;
-}
-
-.add_doctor_form {
-  width: 40%;
+.row-div {
+  margin-top: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
-  .row {
-    width: 32vw;
-    margin-left: 30vw;
-    margin-top: 5px;
-  }
-
   .please {
     margin-left: 50px;
     font-size: 25px;
@@ -157,25 +170,16 @@ nav {
   .span1 {
     font-size: 19px;
   }
- 
-.outter_container {
-  width: 95vw;
-  top: 20px;
-  left: -26px;
+
+  .display_doctor {
+    font-size: 15px;
+  }
+
+  .add_doctor_form {
+    width: 80%;
+  }
 }
 
-.display_doctor {
-  font-size: 15px;
- }
-
- .display_doctor_navbar {
-  margin-right: 180px;
-}
-
-.add_doctor_form {
-  width: 80%;
-}
-}
 @media screen and (min-width: 1024px) {
   .leading {
     width: 30vw;
@@ -217,41 +221,21 @@ nav {
 
   .display_doctor {
     font-size: 19px;
-   }
-
-   .display_doctor_navbar {
-    margin-right: 280px;
   }
    
 }
 
 @media screen and (min-width: 1200px) {
-  .row {
-    width: 20vw;
-    margin-left: 20vw;
-  }
-
   .leading {
     margin-left: 25vw;
     margin-bottom: 100px;
     padding-top: 60px;
   }
 
-  .circle img {
-    position: absolute;
-    width: 85%;
-    height: 65%;
-    top: 23px;
-    left: 5px;
-  }
-
   .left_side_bar {
     position: absolute;
-    left: 70px;
-  }
-
-  .contain {
-    width: 70%;
+    top: 0;
+    left: 0;
   }
 
   .nav-menu {
@@ -259,12 +243,5 @@ nav {
     margin-left: 44px;
     top: -14px;
     height: 300px;
-  }
-
-  .outter_container {
-    width: 95vw;
-    top: 106px;
-    left: -26px;
-    max-height: 120vh;
   }
 }
