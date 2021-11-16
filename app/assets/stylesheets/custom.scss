@@ -2,6 +2,11 @@
 
 body {
   height: 100vh;
+  background: #fff;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
 }
 
 $primary-color-dark: #e2e8f0;
@@ -25,14 +30,6 @@ $divider-color: #bdbdbd;
   justify-content: center;
   align-items: center;
   object-fit: contain;
-}
-
-body {
-  background: #fff;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  overflow: hidden;
 }
 
 h1,

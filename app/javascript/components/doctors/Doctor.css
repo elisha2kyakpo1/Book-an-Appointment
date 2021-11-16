@@ -72,10 +72,6 @@
   position: relative;
 }
 
-.nav-menu {
-  position: absolute;
-}
-
 .span1 {
   font-size: 12px;
 }
@@ -111,19 +107,18 @@
   width: 100px;
   top: 92px;
   margin-left: 40px;
-
 }
 
 .image-div {
-  margin: 0 20px
+  margin: 0 20px;
 }
 
 .display_doctor {
   margin-left: 6%;
   margin-right: 2%;
- font-size: 10px;
- display: flex;
- flex-direction: column;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .display_doctor .btn {
@@ -238,24 +233,19 @@
   }
 
   .nav-menu {
-    margin-left: -1px;
     margin-top: 150px;
+    width: 251px;
+    margin-left: 112px;
+    top: -23px;
   }
 
   .span1 {
     font-size: 27px;
   }
 
-  .nav-menu {
-    width: 251px;
-    margin-left: 112px;
-    top: -23px;
-  }
-
   .display_doctor {
     font-size: 19px;
   }
-   
 }
 
 @media screen and (min-width: 1200px) {
