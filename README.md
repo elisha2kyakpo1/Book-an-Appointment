@@ -1,20 +1,18 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 # Doctors Booking App
+
 This is a Doctors online platform for booking appointments.
 
-* Doctors
-The Docors section displays a list of all available Doctors. Users can book a doctor by clicking the reservation button or cancel the previously made booking.
+* Menu
+The Docors section displays a list of all available Doctors. Users can book a doctor by clicking the reservation button.
 
-* Appointments
+* My appointments
 The Appointments section displays a list of current appointments along with their brief description. 
 
-My Profile
-The My Profile section displays all reserved doctors and booked appointments.
-
-![screeshoot]()
+![screeshoot](app/assets/images/assets/doctors.png)
 
 ## Built With
-- JavaScriptgit branch -a
+- JavaScriptgit
 - Ruby on Rails
 - React
 - Redux
@@ -28,10 +26,10 @@ The My Profile section displays all reserved doctors and booked appointments.
 ## Getting Started
 
 ```cmd
-git clone  git@github.com:Mhdez221993/spacex-travelers-hub.git
-cd bookstore
+git clone https://github.com/elisha2kyakpo1/Book-an-Appointment.git
+cd Book-an-Appointment
+bundle i
 npm install
-npm start
 ```
 
 ## Available Scripts
@@ -41,21 +39,10 @@ In the project directory, you can run:
 
 
 ### `Rails s`
-
-Launches the app.
-
-### `npm run build`
-
-
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Open your browser, and run the command below
+```
+localhost:3000
+```
 
 ================
 
