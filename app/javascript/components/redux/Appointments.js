@@ -19,7 +19,7 @@ const getAppointments = () => (dispatch) => {
 };
 
 const getClientAppointments = () => (dispatch) => {
-  fetch('http://localhost:3000/api/v1/appointments/1')
+  fetch('http://localhost:3000/api/v1/appointments')
     .then((response) => response.json())
     .then((json) => dispatch(loadClientAppointments(json)));
 };
@@ -51,13 +51,13 @@ const clientAppointmentReducer = (state = [], action) => {
     case GET_CLIENT_APPOINTMENTS:
       return action.json.map((appointment) => {
         const {
-          appointment_date,
+          appointment_date_and_time,
           appointment_time,
           client_id,
           doctor_id,
         } = appointment;
         return {
-          appointment_date,
+          appointment_date_and_time,
           appointment_time,
           client_id,
           doctor_id,

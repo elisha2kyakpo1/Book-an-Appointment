@@ -34,7 +34,7 @@ function Appointment() {
                 <div className="appointment">
                   <div>
                     Date&nbsp;&nbsp;
-                    {appointment.appointment_date_and_time}
+                    {appointment.appointment_date_and_time.substring(0, 10)}
                   </div>
                   <div>
                     Time&nbsp;&nbsp;

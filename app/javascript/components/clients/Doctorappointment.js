@@ -9,11 +9,11 @@ import { useSelector } from 'react-redux';
 
 import './Bookappointment.css';
 
-function DoctorAppointment() {
+const DoctorAppointment = () => {
   const { id } = useParams();
   const appointments = useSelector((state) => state.appointmentReducer);
 
-  function onSubmit(e) {
+  const onSubmit = (e) => {
     document.querySelector('.popup-box').style.display = 'none';
     const date = document.getElementById('appointment_date').value;
     const time = document.getElementById('appointment_time').value;
@@ -67,6 +67,6 @@ function DoctorAppointment() {
     </div>
 
   );
-}
+};
 
 export default DoctorAppointment;
