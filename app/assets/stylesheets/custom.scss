@@ -475,6 +475,10 @@ video {
     border-radius: 4px;
   }
 
+  body {
+    overflow-y: scroll;
+  }
+
   .hero-container > h1 {
     font-size: 50px;
     margin-top: -100px;

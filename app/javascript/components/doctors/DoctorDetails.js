@@ -34,17 +34,18 @@ function DoctorDetails() {
       
           <div>
             {storedDoctors.filter((doctor) => doctor.id === doctorId).map((doctor) => (
-              <div className="details">
+              <div key={doctor.id} className="details">
                 <div className="circle-details">
                   <img
                     src={doctor.image}
                     alt="doctor"
                   />
                 </div>
-                <div>
-                  <div>{doctor.name}</div>
-                  <div>{doctor.email}</div>
-                  <div>{doctor.about}</div>
+                <div className="doc-data">
+                  <h4>{doctor.name}</h4>
+                  <h5 className="amount">from as low as $120 per month</h5>
+                  <p>{doctor.email}</p>
+                  <p>{doctor.about}</p>
                 </div>
              </div>
             ))}

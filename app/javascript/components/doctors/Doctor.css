@@ -32,13 +32,12 @@
 
 .circle-details {
   width: 60%;
-  height: 60%;
   position: relative;
 }
 
 .circle-details img {
   width: 100%;
-  height: 60%;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -131,11 +130,36 @@
   margin-left: auto;
 }
 
+.doc-data p {
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+
+.amount {
+  padding: 3px 5px;
+  background-color: #f3f4f6;
+}
+
 .row-div {
   margin-top: 5px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .circle-details,
+  .doc-data {
+    margin: 0 auto;
+  }
+
+  .doc-data {
+    margin-top: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
