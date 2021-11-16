@@ -1,4 +1,9 @@
 .side-menu {
+<<<<<<< HEAD
+=======
+  position: relative;
+  flex-direction: column;
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   height: 100vh;
   z-index: 5;
   list-style-type: none;
@@ -15,9 +20,31 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 /* Change the link color on hover */
 .link:hover {
   background-color:#84cc16;
+=======
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icons * {
+  cursor: pointer;
+}
+
+.social {
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  margin-left: 5%;
+}
+
+/* Change the link color on hover */
+.link:hover {
+  background-color: #84cc16;
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   color: white;
 }
 
@@ -26,7 +53,10 @@
     display: none;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (min-width: 768px) {
 
 }
+=======
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a

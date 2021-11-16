@@ -7,6 +7,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
+<<<<<<< HEAD
 import './bookappointment.css';
 
 function DoctorAppointment() {
@@ -14,6 +15,15 @@ function DoctorAppointment() {
   const appointments = useSelector((state) => state.appointmentReducer);
 
   function onSubmit(e) {
+=======
+import './Bookappointment.css';
+
+const DoctorAppointment = () => {
+  const { id } = useParams();
+  const appointments = useSelector((state) => state.appointmentReducer);
+
+  const onSubmit = (e) => {
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
     document.querySelector('.popup-box').style.display = 'none';
     const date = document.getElementById('appointment_date').value;
     const time = document.getElementById('appointment_time').value;
@@ -24,15 +34,32 @@ function DoctorAppointment() {
       alert('appointment not available');
       e.preventDefault();
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
   }
 
   return (
     <div className="popup-box">
+<<<<<<< HEAD
       <form action="/api/v1/appointments" method="post" className="box">
         <span className="close-icon" onClick={onSubmit}>x</span>
         {DoctorAppointment.content}
         <input type="date" id="appointment_date" name="appointment_date" />
         <select name="appointment_time" id="appointment_time">
+=======
+      <form action="http://localhost:3000/api/v1/appointments" method="post" className="box form-group">
+        <div>
+          <h4>Choose a date and time</h4>
+        </div>
+        <div className="close-btn d-flex">
+          <span className="close-icon" onClick={onSubmit}>x</span>
+        </div>
+        {DoctorAppointment.content}
+        <input className="date-input" type="date" id="appointment_date" name="exampleInputDate1" />
+        <select className="time-select" name="appointment_time" id="appointment_time">
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
           <option value="9:00">9:00</option>
           <option value="9:30">9:30</option>
           <option value="10:00">10:00</option>
@@ -54,11 +81,21 @@ function DoctorAppointment() {
           <option value="18:00">18:00</option>
         </select>
         <input type="hidden" id="doctor_id" name="doctor_id" value={id} />
+<<<<<<< HEAD
         <input type="submit" value="Submit" onClick={onSubmit} />
+=======
+        <div className="submit-appointment-div">
+          <input className="submit-appointment" type="submit" value="Submit" onClick={onSubmit} />
+        </div>
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
       </form>
     </div>
 
   );
+<<<<<<< HEAD
 }
+=======
+};
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 
 export default DoctorAppointment;

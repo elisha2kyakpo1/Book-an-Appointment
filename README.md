@@ -1,5 +1,6 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 # Doctors Booking App
+<<<<<<< HEAD
 This is a Doctors online platform for booking appointments.
 
 * Doctors
@@ -15,6 +16,21 @@ The My Profile section displays all reserved doctors and booked appointments.
 
 ## Built With
 - JavaScriptgit branch -a
+=======
+
+This is a Doctors online platform for booking appointments.
+
+* Menu
+The Docors section displays a list of all available Doctors. Users can book a doctor by clicking the reservation button.
+
+* My appointments
+The Appointments section displays a list of current appointments along with their brief description. 
+
+![screeshoot](app/assets/images/assets/doctors.png)
+
+## Built With
+- JavaScriptgit
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 - Ruby on Rails
 - React
 - Redux
@@ -28,10 +44,17 @@ The My Profile section displays all reserved doctors and booked appointments.
 ## Getting Started
 
 ```cmd
+<<<<<<< HEAD
 git clone  git@github.com:Mhdez221993/spacex-travelers-hub.git
 cd bookstore
 npm install
 npm start
+=======
+git clone https://github.com/elisha2kyakpo1/Book-an-Appointment.git
+cd Book-an-Appointment
+bundle i
+npm install
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 ```
 
 ## Available Scripts
@@ -41,6 +64,7 @@ In the project directory, you can run:
 
 
 ### `Rails s`
+<<<<<<< HEAD
 
 Launches the app.
 
@@ -56,6 +80,12 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+Open your browser, and run the command below
+```
+localhost:3000
+```
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
 
 ================
 

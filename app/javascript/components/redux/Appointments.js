@@ -13,13 +13,21 @@ const loadClientAppointments = (json) => ({
 });
 
 const getAppointments = () => (dispatch) => {
+<<<<<<< HEAD
   fetch('api/v1/appointments')
+=======
+  fetch('http://localhost:3000/api/v1/appointments')
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
     .then((response) => response.json())
     .then((json) => dispatch(loadAppointments(json)));
 };
 
 const getClientAppointments = () => (dispatch) => {
+<<<<<<< HEAD
   fetch('api/v1/appointments/1')
+=======
+  fetch('http://localhost:3000/api/v1/appointments')
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
     .then((response) => response.json())
     .then((json) => dispatch(loadClientAppointments(json)));
 };
@@ -51,13 +59,21 @@ const clientAppointmentReducer = (state = [], action) => {
     case GET_CLIENT_APPOINTMENTS:
       return action.json.map((appointment) => {
         const {
+<<<<<<< HEAD
           appointment_date,
+=======
+          appointment_date_and_time,
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
           appointment_time,
           client_id,
           doctor_id,
         } = appointment;
         return {
+<<<<<<< HEAD
           appointment_date,
+=======
+          appointment_date_and_time,
+>>>>>>> fddb78ab8beb0272cdbc7693b0d3492bb397062a
           appointment_time,
           client_id,
           doctor_id,
