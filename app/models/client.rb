@@ -6,4 +6,5 @@ class Client < ApplicationRecord
   has_many :appointments
   has_many :doctors, through: :appointments, dependent: :destroy
   validates :email, presence: true, uniqueness: true, length: { minimum: 3, maximum: 40 }
+  validates :encrypted_password, presence: true
 end
