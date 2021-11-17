@@ -1,19 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Hamburger.css'
+import Hamburger from './Hamburger';
 import './Sidebar.css';
 
 const SideBar = () => {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
-(
-  
-  <div className="mobile-container">
+
+
+  return (
+    <div>
+    <Hamburger />
     <ul className="side-menu">
       <li>
         <Link className="link" to="/">
@@ -35,9 +30,8 @@ const SideBar = () => {
           Profile
         </Link>
       </li>
-      <i class="fa fa-bars"></i>
     </ul>
-  </div>
-);
-
+    </div>
+  );
+}
 export default SideBar;

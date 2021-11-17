@@ -1,30 +1,29 @@
-import React from 'react'
+import React from 'react';
+import './Hamburger.css';
 
-export default const hamburger = ()=> {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
+ const Hamburger = ()=> {
+    const x = document.getElementById("myLinks");
+    console.log(x)
+    // if (x.style.display === "block") {
+    //     x.style.display = "none";
+    // } else {
+    //     x.style.display = "block";
+    // }
     return (
         
-<div>
+  <div>
             
-    <!-- Simulate a smartphone / tablet -->
-    <div class="mobile-container">
+    <div className="mobile-container">
 
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-        <a href="#home" class="active">Logo</a>
+        <div className="topnav">
+        <a href="#home" className="active">Logo</a>
             <div id="myLinks">
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" className="icon" onClick="Hamburger()">
+            <i className="fa fa-bars"></i>
         </a>
         </div>
 
@@ -38,3 +37,5 @@ export default const hamburger = ()=> {
 </div>
     )
 }
+
+export default Hamburger;
