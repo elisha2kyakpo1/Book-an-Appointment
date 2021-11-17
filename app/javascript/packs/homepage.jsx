@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomePage from '../components/home_page/HomePage';
+import HomePage from '../components/HomePage';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
