@@ -2,8 +2,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Carousel from "react-elastic-carousel";
-import {FaFacebook, FaGoogle, FaTwitter} from 'react-icons/fa'
+import Carousel from 'react-elastic-carousel';
+import { FaFacebook, FaGoogle, FaTwitter } from 'react-icons/fa';
 import { getDoctors } from '../redux/Doctors';
 import { getAppointments, getClientAppointments } from '../redux/Appointments';
 import './Doctor.css';
@@ -37,19 +37,17 @@ const Doctors = () => {
     }
   }, []);
 
-
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
     { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 }
+    { width: 1200, itemsToShow: 4 },
   ];
 
   return (
     <>
       <div className="">
-        <div className="">
-        </div>
+        <div className="" />
         <div className="contain-doctor">
           <div className="leading d-flex">
             <div>
@@ -71,13 +69,13 @@ const Doctors = () => {
                         <p className="paragraph"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.about}</Link></p>
                       </div>
                       <div>
-                      <div className="social-doc">
-                        <div>
-                          <div className="icons">
-                            <FaTwitter />
-                            <FaFacebook />
-                            <FaGoogle />
-                          </div>
+                        <div className="social-doc">
+                          <div>
+                            <div className="icons">
+                              <FaTwitter />
+                              <FaFacebook />
+                              <FaGoogle />
+                            </div>
                           </div>
                         </div>
                       </div>
