@@ -58,8 +58,8 @@
   },
   "scripts": {
     "heroku-postbuild": "npm run build"
-},
-"engines": {
+  },
+  "engines": {
     "npm": "6.7.0",
     "node": "11.13.0"
   }
