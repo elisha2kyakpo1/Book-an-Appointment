@@ -13,13 +13,13 @@ const loadClientAppointments = (json) => ({
 });
 
 const getAppointments = () => (dispatch) => {
-  fetch('http://localhost:3000/api/v1/appointments')
+  fetch('/api/v1/appointments')
     .then((response) => response.json())
     .then((json) => dispatch(loadAppointments(json)));
 };
 
 const getClientAppointments = () => (dispatch) => {
-  fetch('http://localhost:3000/api/v1/appointments')
+  fetch('/api/v1/appointments')
     .then((response) => response.json())
     .then((json) => dispatch(loadClientAppointments(json)));
 };

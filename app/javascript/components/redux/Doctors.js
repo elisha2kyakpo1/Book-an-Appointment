@@ -6,7 +6,7 @@ const loadDoctors = (json) => ({
 });
 
 const getDoctors = () => (dispatch) => {
-  fetch('http://localhost:3000/api/v1/doctors')
+  fetch('/api/v1/doctors')
     .then((response) => response.json())
     .then((json) => dispatch(loadDoctors(json)));
 };
