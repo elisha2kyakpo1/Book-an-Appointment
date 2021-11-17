@@ -12,7 +12,8 @@
 }
 
 .logo,
-.burger {
+.burger,
+.nav-menu-mobile p {
   padding: 0 0.5rem;
 }
 
