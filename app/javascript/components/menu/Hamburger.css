@@ -11,7 +11,8 @@
   justify-content: space-between;
 }
 
-.logo {
+.logo,
+.burger {
   padding: 0 0.5rem;
 }
 
