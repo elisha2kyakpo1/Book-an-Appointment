@@ -1,0 +1,67 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-menu-mobile,
+.parent-container {
+  position: relative;
+  justify-content: space-between;
+}
+
+.logo,
+.burger,
+.nav-menu-mobile p {
+  padding: 0 0.5rem;
+}
+
+.nav-links {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  z-index: 5;
+  background-color: lightgray;
+  width: 100%;
+}
+
+.link-mobile {
+  display: block;
+  color: #525252;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 1.5rem;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+.link-mobile:hover {
+  background-color: #84cc16;
+  color: white;
+}
+
+.line {
+  margin: 2px 0;
+  height: 5px;
+  width: 30px;
+  background-color: #000;
+}
+
+.parent-container,
+.burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .parent-container {
+    display: none;
+  }
+}

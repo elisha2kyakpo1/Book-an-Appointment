@@ -10,11 +10,13 @@ import Appointment from './clients/Appointment';
 import DoctorAppointment from './clients/Doctorappointment';
 import './App.css';
 import SideBar from './menu/Sidebar';
+import Hamburger from './menu/Hamburger';
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
+        <Hamburger />
         <div className="page-container">
           <SideBar />
           <div className="display-doc">

@@ -267,3 +267,17 @@
     height: 300px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .leading div {
+    display: none;
+  }
+
+  .paragraph {
+    margin-left: 20px;
+  }
+
+  .parent-container .nav-menu-mobile {
+    display: none;
+  }
+}
