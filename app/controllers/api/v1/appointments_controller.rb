@@ -16,7 +16,7 @@ class Api::V1::AppointmentsController < ApplicationController
   end
 
   def show
-    @appointments = Appointment.where(client_id:current_client.id)
+    @appointments = Appointment.where(client_id: current_client.id)
     render json: @appointments
   end  
 end
