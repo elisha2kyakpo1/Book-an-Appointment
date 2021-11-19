@@ -13,6 +13,9 @@ The My Profile section displays all reserved doctors and booked appointments.
 
 ![screeshoot]()
 
+## Kanban board
+
+![Current Board](https://user-images.githubusercontent.com/30318155/142569915-26dae751-3f89-4040-8f47-0ac676dc646b.png)
 ## Built With
 - JavaScriptgit branch -a
 - Ruby on Rails
