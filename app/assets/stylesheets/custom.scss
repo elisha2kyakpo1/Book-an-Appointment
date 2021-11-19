@@ -376,7 +376,8 @@ form {
     margin-top: 8px;
     color: #fff;
     font-size: 32px;
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
   }
 
   form {
@@ -841,11 +842,8 @@ video {
 }
 
 .my-appointment {
-  box-shadow:
-    0 0.46875rem 2.1875rem gray,
-    0 0.9375rem 1.40625rem maroon,
-    0 0.25rem 0.53125rem brown,
-    0 0.125rem 0.1875rem w;
+  box-shadow: 0 0.46875rem 2.1875rem gray, 0 0.9375rem 1.40625rem maroon,
+    0 0.25rem 0.53125rem brown, 0 0.125rem 0.1875rem gray;
   padding: 15px;
   border-radius: 8px;
   width: 80%;
@@ -854,11 +852,8 @@ video {
 .appointment {
   font-size: 10px;
   margin-bottom: 9px;
-  box-shadow:
-    0 0.46875rem 2.1875rem rgb(4 9 20 / 3.5%),
-    0 0.9375rem 1.40625rem rgb(4 9 20 / 5%),
-    0 0.25rem 0.53125rem rgb(4 9 20 / 5.5%),
-    0 0.125rem 0.1875rem rgb(4 9 20 / 3.5%);
+  box-shadow: 0 0.46875rem 2.1875rem gray, 0 0.9375rem 1.40625rem maroon,
+    0 0.25rem 0.53125rem brown, 0 0.125rem 0.1875rem gray;
   padding: 15px;
   border-radius: 8px;
 }
@@ -994,11 +989,8 @@ video {
 
 .inner-div {
   width: 60%;
-  box-shadow:
-    0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
-    0 0.9375rem 1.40625rem rgb(4 9 20 / 3%),
-    0 0.25rem 0.53125rem rgb(4 9 20 / 5%),
-    0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+  box-shadow: 0 0.46875rem 2.1875rem gray, 0 0.9375rem 1.40625rem maroon,
+    0 0.25rem 0.53125rem brown, 0 0.125rem 0.1875rem gray;
   padding: 15px;
   border-radius: 8px;
 }
@@ -1017,27 +1009,3 @@ video {
     display: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
