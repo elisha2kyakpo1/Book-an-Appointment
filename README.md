@@ -11,7 +11,9 @@ The Appointments section displays a list of current appointments along with thei
 My Profile
 The My Profile section displays all reserved doctors and booked appointments.
 
-![screeshoot]()
+
+![screeshoot](app/assets/images/assets/doctors.png)
+
 
 ## Kanban board
 ![Initial Board](https://user-images.githubusercontent.com/30318155/142570220-2737354f-0fc5-41df-8566-f40ddf6b3f6e.png)
