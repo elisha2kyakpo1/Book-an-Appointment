@@ -13,13 +13,13 @@ const loadClientAppointments = (json) => ({
 });
 
 const getAppointments = () => (dispatch) => {
-  fetch('https://damp-brook-57775.herokuapp.com//api/v1/appointments')
+  fetch('https://damp-brook-57775.herokuapp.com/api/v1/appointments')
     .then((response) => response.json())
     .then((json) => dispatch(loadAppointments(json)));
 };
 
 const getClientAppointments = () => (dispatch) => {
-  fetch('https://damp-brook-57775.herokuapp.com//api/v1/appointments')
+  fetch('https://damp-brook-57775.herokuapp.com/api/v1/appointments')
     .then((response) => response.json())
     .then((json) => dispatch(loadClientAppointments(json)));
 };
