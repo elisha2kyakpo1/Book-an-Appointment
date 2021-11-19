@@ -12,6 +12,10 @@ This is a Doctors online platform for booking appointments.
 
 ![screeshoot](app/assets/images/assets/doctors.png)
 
+## Live Demo
+
+[API LIVE LINK](https://damp-brook-57775.herokuapp.com/)
+
 ## Built With
 
 - JavaScriptgit
