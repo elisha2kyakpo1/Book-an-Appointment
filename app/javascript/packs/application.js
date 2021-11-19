@@ -16,8 +16,3 @@ const componentRequireContext = require.context('components', true);
 const ReactRailsUJS = require('react_ujs');
 
 ReactRailsUJS.useContext(componentRequireContext);
-
-//= require jquery3
-//= require popper
-//= require bootstrap-sprockets
-//= require activestorage

@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       
-      resources :doctors  
-      resources :appointments
-      resources :clients
+      resources :doctors, only: %i[index create show]
+      resources :appointments, only: %i[index create show]
+      resources :clients, only: %i[index create show]
   
     end
   end
