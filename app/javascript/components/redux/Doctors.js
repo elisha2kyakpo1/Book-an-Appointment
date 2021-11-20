@@ -6,7 +6,7 @@ const loadDoctors = (json) => ({
 });
 
 const getDoctors = () => (dispatch) => {
-  fetch('https://damp-brook-57775.herokuapp.com/api/v1/doctors')
+  fetch('http://localhost:3000/api/v1/doctors')
     .then((response) => response.json())
     .then((json) => dispatch(loadDoctors(json)));
 };
