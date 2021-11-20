@@ -1,56 +1,56 @@
 /* Popup style */
 .popup-box {
-    position: fixed;
-    background: #00000050;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  
-  .box {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    height: auto;
-    max-height: 70vh;
-    margin-top: calc(100vh - 85vh - 20px);
-    background: #fff;
-    border-radius: 4px;
-    padding: 20px;
-    border: 1px solid #999;
-    overflow: auto;
-  }
-  
-  .submit-appointment-div {
-    margin-top: 2%;
-  }
-  
-  .submit-appointment {
-    width: 42%;
-  }
-  
-  .time-select {
-    padding: 3px;
-  }
-  
-  .date-input {
-    margin-right: 20px;
-  }
-  
-  .close-icon {
-    margin: auto;
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 800;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    line-height: 20px;
-  }
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.submit-appointment-div {
+  margin-top: 2%;
+}
+
+.submit-appointment {
+  width: 42%;
+}
+
+.time-select {
+  padding: 3px;
+}
+
+.date-input {
+  margin-right: 20px;
+}
+
+.close-icon {
+  margin: auto;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 800;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+}
