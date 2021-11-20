@@ -2,30 +2,11 @@
 /* eslint-disable no-alert */
 /* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react';
+// import { useSelector } from 'react-redux';
 import './AddDoctor.css';
 
 const AddDoctor = () => {
-  const doctors = useSelector((state) => state.doctorReducer);
-  const [name, getName] = useState('');
-  const [name, getName] = useState('');
-  const [name, getName] = useState('');
-  const [name, getName] = useState('');
-  const sendData = (bodyData) => {
-    fetch('/api/v1/doctors', {
-      method: 'POST',
-      'Content-Type': 'application/json',
-      body: JSON.stringify(bodyData),
-    });
-  };
-
-  const submitData = (e) => {
-    e.preventDefault();
-      if (name, email, image, about) {
-        
-      }
-  };
 
   return (
 
