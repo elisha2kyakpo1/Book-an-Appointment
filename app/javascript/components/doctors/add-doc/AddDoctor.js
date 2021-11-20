@@ -12,14 +12,10 @@ const AddDoctor = () => {
   const dispatch = useDispatch();
   const [formState, setFormState] = useState({});
 
-  function handleChange(e) {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(addDoctorAPI(formState));
-
+    setFormState({ ...formState, [e.target.name]: e.target.value });
     setFormState({
       ...formState,
       name: "",
@@ -32,7 +28,6 @@ const AddDoctor = () => {
   return (
     <>
       <Form
-        handleChange={(e) => handleChange(e)}
         handleSubmit={(e) => handleSubmit(e)}
         formState={formState}
       />
