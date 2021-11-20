@@ -7,7 +7,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-import './Bookappointment.css';
+import './Bookings.css';
 
 const DoctorAppointment = () => {
   const { id } = useParams();

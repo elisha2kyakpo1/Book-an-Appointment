@@ -16,16 +16,6 @@ local:
 
 # Remember not to checkin your GCS keyfile to a repository
 
-cloudinary:      
-service: Cloudinary
-
-
-google:
-  service: GCS
-  project: "My Project"
-  credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
-  bucket: my-project-1527061724299.appspot.com
-
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 # microsoft:
 #   service: AzureStorage

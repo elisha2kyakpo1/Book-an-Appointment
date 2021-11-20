@@ -56,7 +56,7 @@ const AddDoctor = () => {
       form.append('email', email);
       form.append('phone', phone);
       form.append('about', document.getElementById('about').value);
-      fetch('http://localhost:3000/api/v1/doctors', {
+      fetch('/api/v1/doctors', {
         method: 'POST',
         'Content-Type': 'application/json',
         body: form,
