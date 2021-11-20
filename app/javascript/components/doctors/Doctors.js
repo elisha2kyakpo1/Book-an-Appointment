@@ -53,7 +53,7 @@ const Doctors = () => {
         <div className="contain-doctor">
           <div className="leading d-flex">
             <div>
-              <h2 className="">LEADING DOCTORS</h2>
+              <h2 title="Welcome" className="">LEADING DOCTORS</h2>
               <p className="paragraph">please select a doctor</p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const Doctors = () => {
                         <img src={doctor.image} alt="doctors" />
                       </div>
                       <div className="doc-info">
-                        <h4 className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h4>
+                        <h4 title="add" className="name"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.name}</Link></h4>
                         <p className="paragraph"><Link to={`/DetailsPage/${doctor.id}`}>{doctor.about}</Link></p>
                       </div>
                       <div>
