@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Client < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -8,3 +9,14 @@ class Client < ApplicationRecord
   validates :email, presence: true, uniqueness: true, length: { minimum: 3, maximum: 40 }
   validates :encrypted_password, presence: true
 end
+=======
+class Client < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_many :appointments
+  has_many :doctors, through: :appointments, dependent: :destroy
+  validates :email, presence: true, uniqueness: true, length: { minimum: 3, maximum: 40 }
+end
+>>>>>>> e327e181373a447b1c6a3774ea416daed0cf11b3

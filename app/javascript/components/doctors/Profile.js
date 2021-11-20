@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 
 function Profile() {
@@ -34,3 +35,16 @@ function Profile() {
   );
 }
 export default Profile;
+=======
+import React from 'react';
+
+function Profile() {
+  return (
+    <div>
+      <h1>This is my profile</h1>
+
+    </div>
+  );
+}
+export default Profile;
+>>>>>>> e327e181373a447b1c6a3774ea416daed0cf11b3
