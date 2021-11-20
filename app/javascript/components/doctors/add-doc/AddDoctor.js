@@ -3,13 +3,30 @@
 /* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
-// import { useSelector } from 'react-redux';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addDoctorAPI } from "../../redux/Doctors";
 import './AddDoctor.css';
+import Form from "./Form";
 
 const AddDoctor = () => {
+  const dispatch = useDispatch();
+  const [formState, setFormState] = useState({});
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    dispatch(addDoctorAPI(formState));
+    setFormState({ ...formState, [e.target.name]: e.target.value });
+    setFormState({
+      ...formState,
+      name: "",
+      email: "",
+      about: "",
+      image: "",
+    });
+  }
 
   return (
-
     <>
 
       <div className="add-doctor d-flex">
@@ -42,6 +59,10 @@ const AddDoctor = () => {
           </form>
         </div>
       </div>
+      <Form
+        handleSubmit={(e) => handleSubmit(e)}
+        formState={formState}
+      />
     </>
   );
 };
