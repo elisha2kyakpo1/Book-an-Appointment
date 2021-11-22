@@ -1,0 +1,34 @@
+.add-doctor {
+  justify-content: center;
+  align-items: center;
+}
+
+.side_add_doctor {
+  margin-right: 5px;
+}
+
+.inner-div {
+  width: 60%;
+  box-shadow:
+    0 0.46875rem 2.1875rem rgb(4 9 20 / 3%),
+    0 0.9375rem 1.40625rem rgb(4 9 20 / 3%),
+    0 0.25rem 0.53125rem rgb(4 9 20 / 5%),
+    0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.btn,
+.form-group {
+  margin-top: 10px;
+}
+
+.add_doctor_form {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .add-doctor {
+    display: none;
+  }
+}

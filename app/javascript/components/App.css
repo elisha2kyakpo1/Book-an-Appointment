@@ -1,0 +1,8 @@
+.page-container {
+  position: relative;
+  display: flex;
+}
+
+.display-doc {
+  flex: 2;
+}
